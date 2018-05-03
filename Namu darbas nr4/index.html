@@ -22,19 +22,78 @@
         	width: 100%;
         	height: 100%;
         	position: fixed;
-        	background-color: black;
-        	opacity: 0.4;
+        	background-color: rgba(0,0,0,0.4);
         	z-index: 995;
         	visibility: hidden;
         }
         #canYouComeBOX {
-        	margin: 10% auto;
-        	height: 300px;
-        	width: 600px;
+        	margin: 5% auto;
+        	height: auto;
+        	width: auto;
+            max-width: 640px;
         	z-index: 999;
         	visibility: hidden;
         	opacity: 1;
         	background-color: white;
+            text-align: center;
+        }
+        .canYouCome_wrapper {
+            width: auto;
+            margin: 0 7%;
+            padding-bottom: 30px;
+        }
+        .canYouCome_wrapper_going {
+            width: 50%;
+            float: left;
+            text-align: center;
+            padding: 8px 16px;
+            margin: 0;
+            background-color: #3ce402;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            color: white;
+            line-height: 2;
+            font-size: 15px;
+        }
+        .canYouCome_wrapper_going:hover, .canYouCome_wrapper_cant:hover {
+            background-color: #ccc;
+            color: black;
+        }
+        .canYouCome_wrapper_cant {
+            width: 50%;
+            float: right;
+            text-align: center;
+            padding: 8px 16px;
+            margin: 0;
+            background-color: #f44336;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            color: white;
+            line-height: 2;
+            font-size: 15px;
+        }
+        .canYouCome_wrapper input {
+            width: 100%;
+            height: 35px;
+        }
+        #canYouComeBOX h1 {
+           letter-spacing: 4px;
+           font-weight: 400;
+           padding-top: 30px;
+           margin: 0px;
+           font-size: 36px;
+           line-height: 1.5;
+        }
+        .hopeYoucanSecond {
+            line-height: 2;
+            font-size: 15px;
+        }
+        .signature {
+            font-style: italic;
+            line-height: 2;
+            font-size: 15px;
         }
         .headerBOX {
         	position: relative;
@@ -401,13 +460,35 @@
         	width: auto;
         	padding-top: 10px;
         }
+        .canYouCome_wrapper {
+            width: 80%;
+        }
+         .canYouCome_wrapper_going {
+           float: none;
+           width: 100%;
+        }
+         .canYouCome_wrapper_cant {
+           float: none;
+           width: 100%;
         }
     </style>
 </head>
 <body id="body" class="bodyBOX">
 	<div id="blackPopupWindow">
-		<div id="canYouComeBOX"></div>
-	</div>
+        <div id="canYouComeBOX">
+            <h1>CAN YOU COME?</h1>
+            <p class="hopeYoucanSecond">We really hope you can make it</p>
+            <div class="canYouCome_wrapper">
+                <input type="text" name="names" value="Name(s)">
+                <p class="signature">Sincerely, John & Jane</p>
+                <div>
+                    <button class="canYouCome_wrapper_going"><div>Going</div></button>
+                    <button class="canYouCome_wrapper_cant" onclick="cantCome()"><div>Can't come</div></button>
+                     <div style="clear: both"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="navList">
         <nav>
             <a href="#body"><div class="greyedOut">Home</div></a>
@@ -489,7 +570,11 @@
 	function visible()	{
 		document.getElementById("blackPopupWindow").style.visibility = "visible";
 		document.getElementById("canYouComeBOX").style.visibility = "visible";
-	}
+    }
+    function cantCome() {
+        document.getElementById("blackPopupWindow").style.visibility = "hidden";
+        document.getElementById("canYouComeBOX").style.visibility = "hidden";
+    }
 </script>
 </body>
 </html>
