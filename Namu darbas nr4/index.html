@@ -120,6 +120,9 @@
             color: white;
             outline: none;
         }
+        .contentBOX a:hover {
+        	text-decoration: none;
+        }
         .contentBOX button:hover {
             color: black;
             background-color: #ccc;
@@ -213,9 +216,11 @@
         }
         .weddingBOX_float_when {
         	float: left;
+        	width: 50%;
         }
         .weddingBOX_float_where {
         	float: right;
+        	width: 50%;
         }
         .inviteBOX {
             
@@ -252,7 +257,7 @@
         }
 
         .responseButton {
-            background-color: #f44336;
+            background-color: #f44336!important;;
             opacity: 0.6;
             color: white;
             font-size: 24px;
@@ -264,6 +269,10 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+        }
+        .responseButton:hover {
+        	background-color: grey;
+        	color: white;
         }
         .footer {
             position: static;
@@ -313,20 +322,21 @@
 
         nav {
             display: block;
-            margin: 10px auto 0px auto;
-            width: 550px;
+            margin: 0 auto;
+            width: 90%;
             color: rgba(0, 0, 0, 0.70);
             font-size: 15px;
         }
 
         nav div {
             margin: 0px;
+            width: 20%;
             float: left;
         }
         .greyedOut {
             padding-top: 8px;
             height: 30px;
-            width: 130px;
+            
             text-align: center;
         }
 
@@ -337,7 +347,7 @@
         .blacketOut {
             padding-top: 8px;
             height: 30px;
-            width: 130px;
+            
             text-align: center;
         }
 
@@ -366,9 +376,11 @@
         	}
         .weddingBOX_float_when {
         	float: none;
+        	width: auto;
         }
         .weddingBOX_float_where {
         	float: none;
+        	width: auto;
         	padding-top: 10px;
         }
         }
