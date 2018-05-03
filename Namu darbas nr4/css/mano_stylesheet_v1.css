@@ -1,0 +1,350 @@
+﻿* {
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-width: 30%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+/*Floating navigation bar style*/
+#navList {
+    position: fixed;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.80);
+    z-index: 999;
+}
+
+    #navList:hover {
+        background-color: white;
+        color: black;
+    }
+
+nav {
+    display: block;
+    margin: 8px auto 0px auto;
+    width: 550px;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 15px;
+}
+
+    nav div {
+        margin: 0px;
+        float: left;
+    }
+
+.greyedOut {
+    padding-top: 10px;
+    height: 30px;
+    width: 130px;
+    text-align: center;
+}
+
+    .greyedOut:hover {
+        background-color: #c3c3c3;
+    }
+
+.blacketOut {
+    padding-top: 10px;
+    height: 30px;
+    width: 130px;
+    text-align: center;
+}
+
+    .blacketOut:hover {
+        background-color: black;
+        color: white;
+    }
+/*Main body syle start*/
+#headFOTO {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 667px;
+    background: #000000 url('img/wedding_couple.jpg') top center no-repeat;
+    /*background-attachment: fixed; idomus efektas gaunasi lyg stovetu vietoje*/
+    background-size: cover;
+    filter: grayscale(0.5);
+}
+
+.mainHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+    .mainHeader h1 {
+        font-size: 64px;
+        font-weight: 400;
+        line-height: 96px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .mainHeader h2 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 45px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .mainHeader h3 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        margin: 0px;
+    }
+
+    .mainHeader h1, h2, h3 {
+        letter-spacing: 4px;
+        text-align: center;
+        z-index: 4;
+    }
+
+#mainBody {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #ffdddd !important;
+    filter: grayscale(0.5);
+}
+
+.mainBody_content {
+    /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -52%);*/
+    display: inline-block;
+    position: relative;
+    padding: 64px 16px;
+    margin: 0px auto;
+    border: none;
+    width: auto;
+    max-width: 980px;
+    height: auto;
+}
+
+    .mainBody_content h1 {
+        text-align: center;
+        color: #757575;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 1.5;
+        margin: 10px 0px;
+    }
+
+    .mainBody_content img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(0.5);
+        border: none;
+        border-radius: 4px;
+        margin: 32px 0px;
+    }
+
+    .mainBody_content p {
+        line-height: 2;
+        color: black;
+        font-style: italic;
+        font-size: 15px;
+    }
+
+.weddingDetails_button {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: black;
+    color: white;
+}
+
+    .weddingDetails_button:hover {
+        color: black;
+        background-color: #ccc;
+    }
+
+#flowersBackground {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 617px;
+    background: black url('img/flowers.jpg') top left no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+.centeredContainers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-align: center;
+}
+
+#flowersBackground h3, h2 {
+    margin: 0px;
+    font-weight: 400;
+    line-height;
+    1.5;
+}
+
+#flowersBackground h3 {
+    font-size: 64px;
+    margin: 10px 0;
+}
+
+#flowersBackground h2 {
+    font-size: 30px;
+    margin: 10px 0px;
+}
+
+#weddingPlace {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-color: #ffdddd !important;
+    filter: grayscale(0.5);
+}
+
+    #weddingPlace h1 {
+        color: #757575 !important;
+        font-weight: bold;
+        font-size: 36px;
+        line-height;
+        1.5;
+    }
+
+    #weddingPlace img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(0.5);
+        border: none;
+        border-radius: 8px;
+        margin: 64px 0px;
+    }
+
+#invitationFooter {
+    position: relative;
+    width: 100%;
+    height: 1000px background-color: #ffdddd !important;
+}
+
+.perfectCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+.hopeYoucan {
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.kindlyRespond {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.hopeYoucan, .kindlyRespond {
+    text-align: center;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.responseButton {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    opacity: 0.6;
+    color: white;
+    font-size: 24px;
+    line-height: 2;
+    letter-spacing: 4px;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 60px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Black footer syle start*/
+#footer {
+    position: relative;
+    background: black;
+    color: white;
+    height: 90px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 1;
+    font-size: 15px;
+}
+
+    #footer footer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+    }
+
+footer a {
+    color: white;
+    text-size-adjust: 100%;
+    line-height: 30px;
+}
+
+    footer a:hover {
+        color: green;
+    }
+/*White background for navigation bar when at the bottom of the page*/
+#whiteBottom {
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+/*Media type: viewport less than 600px in width*/
+@media screen and (max-width: 600px) {
+    #navList {
+        display: none;
+    }
+
+    #whiteBottom {
+        display: none;
+    }
+}
