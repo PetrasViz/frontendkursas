@@ -25,14 +25,14 @@
         	background-color: black;
         	opacity: 0.4;
         	z-index: 995;
-        	display: visible;
+        	visibility: hidden;
         }
-        .canYouComeBOX {
+        #canYouComeBOX {
         	margin: 10% auto;
         	height: 300px;
         	width: 600px;
         	z-index: 999;
-        	display: visible;
+        	visibility: hidden;
         	opacity: 1;
         	background-color: white;
         }
@@ -407,7 +407,7 @@
 </head>
 <body id="body" class="bodyBOX">
 	<div id="blackPopupWindow">
-		<div class="canYouComeBOX"></div>
+		<div id="canYouComeBOX"></div>
 	</div>
     <div class="navList">
         <nav>
@@ -476,7 +476,7 @@
         <div class="inviteBOX_wrapp">
             <h1 class="hopeYoucan">HOPE YOU CAN MAKE IT!</h1>
             <p class="kindlyRespond">Kindly Respond By January, 2017</p>
-            <button class="responseButton">RSVP</button>
+            <button class="responseButton" onclick="visible()">RSVP</button>
     </div>
     </div>
     <div class="footer">
@@ -486,5 +486,11 @@
         </footer>
     </div>
     <div class="whiteBottom"></div>
+<script>
+	function visible()	{
+		document.getElementById("blackPopupWindow").style.visibility = "visible";
+		document.getElementById("canYouComeBOX").style.visibility = "visible";
+	}
+</script>
 </body>
 </html>
