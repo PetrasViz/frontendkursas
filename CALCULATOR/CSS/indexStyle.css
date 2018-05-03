@@ -1,0 +1,75 @@
+﻿body {
+}
+
+#mainBody {
+    border-style: solid;
+    border-color: black;
+    width: 300px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #000000;
+}
+
+    #mainBody .button td {
+        position: center;
+        text-align: center;
+        text-color: red;
+    }
+
+#display {
+    width: 280px;
+    height: 50px;
+    border-style: solid;
+    border-color: black;
+    position: right;
+    text-align: right;
+    background-color: #c90a0a;
+    font-size: 30px;
+}
+
+#outputDisplay {
+    background-color: #c90a0a;
+    color: #000000;
+    background: transparent;
+    border: 0px solid;
+    font-size: 20px;
+    text-align: right;
+}
+
+#buttonDesign {
+    position: static;
+    background-color: #000000;
+    border: 2px solid #c90a0a;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #c90a0a;
+    width: 50px;
+    height: 50px;
+    duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+    #buttonDesign:hover {
+        position: static;
+        background-color: #ffffff;
+        border: 2px solid #c90a0a;
+        border-radius: 15px;
+        font-size: 25px;
+        color: #c90a0a;
+        width: 50px;
+        height: 50px;
+    }
+
+    #buttonDesign:onclick {
+        position: static;
+        background-color: #000000;
+        border: 2px solid #c90a0a;
+        border-radius: 15px;
+        font-size: 20px;
+        color: #c90a0a;
+        width: 50px;
+        height: 50px;
+        duration: 0.4s;
+        transition-duration: 0.4s;
+    }

@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+   <link rel="stylesheet" href="\css\indexStyle.css"/>
+</head>
+<body>
+    <form name="Calculator">
+        <table id="mainBody">
+            <tr>
+                <td id="display" colspan="4"><input id="outputDisplay" type="text" name="CalculatorDisplay" maxlength="40" size="25" readonly="readonly"></td>
+            </tr>
+            <tr class="button">
+                <td>
+                    <input id="buttonDesign" type="button" onclick="memSave()" value="MS">
+                </td>
+                <td>
+                    <input id="buttonDesign" type="button" onclick="memRead()" value="MR">
+                </td>
+                <td>
+                    <input id="buttonDesign" type="button" onclick="memClear()" value="MC">
+                </td>
+                <td>
+                    <input id="buttonDesign" type="button" onclick="ClearEntry(this.value)" value="CE">
+                </td>
+            </tr>
+            <tr class="button">
+                <td id="sqrt">
+                    <input id="buttonDesign" type="button" onclick="squareRoot()" value="√">
+                </td>
+                <td id="pow">
+                    <input id="buttonDesign" type="button" onclick="power()" value="x2">
+                </td>
+                <td id="prec">
+                    <input id="buttonDesign" type="button" onclick="Percent()" value="℅">
+                </td>
+                <td id="clear">
+                    <input id="buttonDesign" type="button" onclick="pieValue()" value="π">
+                </td>
+            </tr>
+            <tr class="button">
+                <td id="seven">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="7">
+                </td>
+                <td id="eight">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="8">
+                </td>
+                <td id="nine">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="9">
+                </td>
+                <td id="subs">
+                    <input id="buttonDesign" type="button" onclick="Effect(this.value)" value="÷">
+                </td>
+            </tr>
+            <tr class="button">
+                <td id="four">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="4">
+                </td>
+                <td id="five">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="5">
+                </td>
+                <td id="six">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="6">
+                </td>
+                <td id="x">
+                    <input id="buttonDesign" type="button" onclick="Effect(this.value)" value="x">
+                </td>
+            </tr>
+            <tr class="button">
+                <td id="one">
+                    <input id="buttonDesign" class="numbers" type="button" onclick="numberWrite(this.value)" value="1">
+                </td>
+                <td id="two">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="2">
+                </td>
+                <td id="tree">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="3">
+                </td>
+                <td id="minus">
+                    <input id="buttonDesign" type="button" onclick="Effect(this.value)" value="-">
+                </td>
+            </tr>
+            <tr class="button">
+                <td id="zero">
+                    <input id="buttonDesign" type="button" onclick="numberWrite(this.value)" value="0">
+                </td>
+                <td id="dot">
+                    <input id="buttonDesign" type="button" onclick="DecimalPoint(this.value)" value=".">
+                </td>
+                <td id="equal">
+                    <input id="buttonDesign" type="button" onclick="Effect(this.value)" value="=">
+                </td>
+                <td id="plus">
+                    <input id="buttonDesign" type="button" onclick="Effect(this.value)" value="+">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script language="javascript" type="text/javascript">var KeyPad = document.Calculator;
+   var Accumulate = 0;
+   var NewNumber = false;
+   var NextOp = "";
+   var savedValue = new Array(1);
+   window.onload = function(){ document.getElementById("outputDisplay").value = "0";
+   }
+   function numberWrite(Number) // Display numbers
+   {
+if (NewNumber) {
+KeyPad.CalculatorDisplay.value  = Number;
+NewNumber = false;
+   }
+else {
+if (KeyPad.CalculatorDisplay.value == "0")
+KeyPad.CalculatorDisplay.value = Number;
+else
+KeyPad.CalculatorDisplay.value += Number;
+   }
+}
+    function Effect(Eff) // Main functions + - * /, and =
+    {
+var CalculatorDisplay= KeyPad.CalculatorDisplay.value;
+if (NewNumber && NextOp != "=");
+else
+{
+NewNumber = true;
+if ( '+' == NextOp )
+Accumulate += parseFloat(CalculatorDisplay);
+else if ( '-' == NextOp )
+Accumulate -= parseFloat(CalculatorDisplay);
+else if ( '÷' == NextOp )
+Accumulate /= parseFloat(CalculatorDisplay);
+else if ( 'x' == NextOp )
+Accumulate *= parseFloat(CalculatorDisplay);
+else
+Accumulate = parseFloat(CalculatorDisplay);
+KeyPad.CalculatorDisplay.value = Accumulate;
+NextOp = Eff;
+   }
+}
+    function DecimalPoint() {
+var curReadOut = KeyPad.CalculatorDisplay.value;
+if (NewNumber) {
+curReadOut = "0.";
+NewNumber = false;
+   }
+else
+{
+if (curReadOut.indexOf(".") == -1)
+curReadOut += ".";5
+   }
+KeyPad.CalculatorDisplay.value = curReadOut;
+}
+    function ClearEntry() {
+KeyPad.CalculatorDisplay.value = "0";
+NewNumer = true;
+}
+    function Percent() {
+KeyPad.CalculatorDisplay.value = (parseFloat(KeyPad.CalculatorDisplay.value) / 100) * parseFloat(Accumulate);
+}
+    function squareRoot(){
+         KeyPad.CalculatorDisplay.value = Math.sqrt(KeyPad.CalculatorDisplay.value);
+    }
+    function memSave(){
+savedValue[0] =  KeyPad.CalculatorDisplay.value;
+    }
+    function power(){
+KeyPad.CalculatorDisplay.value = Math.pow(KeyPad.CalculatorDisplay.value,2);
+    }
+    function memRead(){
+KeyPad.CalculatorDisplay.value = savedValue[0];
+NewNumber = false;
+var memCheck = savedValue[0];
+if(memCheck === undefined){
+document.getElementById("outputDisplay").value = "NO MEM";
+NewNumber = true;
+}
+}
+     function memClear(){
+savedValue = new Array(1);
+    }
+    function pieValue(){
+KeyPad.CalculatorDisplay.value =  Math.PI;
+NewNumber = false;
+    }</script>
+</body>
+</html>
