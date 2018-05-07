@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Namu darbas nr6</title>
+    <style>
+    	* {
+    		font-family: serif;
+    	}
+    	body {
+    		width: 100%;
+    		height: 100%;
+    		background: darkgray;
+    	}
+    	.container {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%,-50%);
+    		background-color: #f1f1f1;
+    	}
+    	.wrapper {
+    		margin: 10px auto;
+    	}
+    	.wrapper header {
+    		color: #9e9e9e;
+    		text-align: center;
+    		font-size: 20px;
+    		font-weight: bold;
+    		padding: 20px;
+    	}
+    	.contentWrapper {
+    		width: 86%;
+    		margin: 0 auto;
+    	}
+    	.contentWrapper .inputBox {
+    		width: 100%;
+    		border-radius: 8px;
+    		height: 36px;
+    		border: none;
+    		margin-bottom: 10px;
+    		color: #9e9e9e;
+    		font-weight: 700;
+    		font-size: 12px;
+    		text-indent: 12px;
+    		outline: none;
+    		text-decoration: none;
+    		line-height: 3;
+    	}
+    	.fullHeight {
+    		height: 130px !important;
+    		resize: none;
+    	}
+    	.contentWrapper .submitButton {
+    		width: 100%;
+    		height: 35px;
+    		background-color: red;
+    		border-style: none;
+    		border-radius: 8px;
+    		margin-bottom: 40px;
+    		color: white;
+    		font-weight: 700;
+    		filter: grayscale(0.1);
+    		outline: none;
+    	}
+    	.inputWrapper {
+    		width: 100%;
+    		height: 130px;
+    	}
+    	  }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="wrapper">
+			<header>Elegant Contact Form</header>
+			<div class="contentWrapper">
+				<div class="inputWrapper">
+					<div style="float: left; width: 48%">
+						<input class="inputBox" type="text" name="name" placeholder="Name" maxlength="50">
+						<input class="inputBox" type="email" name="email" placeholder="Email address" maxlength="50">
+						<input class="inputBox" type="text" name="subject" placeholder="Subject" maxlength="50">.
+					</div>
+					<div style="float: right; width: 50%">
+						<textarea class="inputBox fullHeight" type="text" name="message" placeholder="Message"></textarea>
+					</div>
+				</div>
+				<div>
+					<input class="submitButton" type="submit">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
