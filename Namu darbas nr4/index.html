@@ -142,12 +142,10 @@
             height: 100%;
             background-color: #ffdddd !important;
             filter: grayscale(0.5);
-            margin: 0px;
-            
+            margin: 0px;  
         }
         .contentBOX_wrapp {
             position: static;
-           
             display: block;
             max-width: 980px;
             margin-left: auto;
@@ -190,12 +188,14 @@
             padding: 12px 24px;
             font-size: 18px;
             text-align: center;
-            text-decoration: none;
             line-height: 2;
             vertical-align: middle;
             background-color: black;
             color: white;
             outline: none;
+        }
+        .contentBOX a {
+        	text-decoration: none;
         }
         .contentBOX a:hover {
         	text-decoration: none;
@@ -570,7 +570,7 @@
 	function visible()	{
 		document.getElementById("blackPopupWindow").style.visibility = "visible";
 		document.getElementById("canYouComeBOX").style.visibility = "visible";
-    }
+	}
     function cantCome() {
         document.getElementById("blackPopupWindow").style.visibility = "hidden";
         document.getElementById("canYouComeBOX").style.visibility = "hidden";
