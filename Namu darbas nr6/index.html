@@ -17,6 +17,8 @@
     		position: absolute;
     		top: 50%;
     		left: 50%;
+    		width: 80%;
+    		max-width: 800px;
     		transform: translate(-50%,-50%);
     		background-color: #f1f1f1;
     	}
@@ -33,6 +35,9 @@
     	.contentWrapper {
     		width: 86%;
     		margin: 0 auto;
+    	}
+    	form, fieldset {
+    		border: none;
     	}
     	.contentWrapper .inputBox {
     		width: 100%;
@@ -76,19 +81,23 @@
 		<div class="wrapper">
 			<header>Elegant Contact Form</header>
 			<div class="contentWrapper">
-				<div class="inputWrapper">
-					<div style="float: left; width: 48%">
-						<input class="inputBox" type="text" name="name" placeholder="Name" maxlength="50">
-						<input class="inputBox" type="email" name="email" placeholder="Email address" maxlength="50">
-						<input class="inputBox" type="text" name="subject" placeholder="Subject" maxlength="50">.
-					</div>
-					<div style="float: right; width: 50%">
-						<textarea class="inputBox fullHeight" type="text" name="message" placeholder="Message"></textarea>
-					</div>
-				</div>
-				<div>
-					<input class="submitButton" type="submit">
-				</div>
+				<form>
+					<fieldset>
+						<div class="inputWrapper">
+							<div style="float: left; width: 48%">
+								<input class="inputBox" type="text" name="name" placeholder="Name" maxlength="50">
+								<input class="inputBox" type="email" name="email" placeholder="Email address" maxlength="50">
+								<input class="inputBox" type="text" name="subject" placeholder="Subject" maxlength="50">.
+							</div>
+							<div style="float: right; width: 50%">
+								<textarea class="inputBox fullHeight" type="text" name="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<div>
+							<input class="submitButton" type="submit">
+						</div>
+					</fieldset>
+				</form>
 			</div>
 		</div>
 	</div>
