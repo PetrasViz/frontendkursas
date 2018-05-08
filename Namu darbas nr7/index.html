@@ -12,13 +12,73 @@
         }
         .container {
             width: 80%;
-            min-width: 400px;
+            min-width: 600px;
             max-width: 800px;
             background-color: lightgray;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
+            border-radius: 5px;
+        }
+        form, fieldset {
+            border: none;
+        }
+        .containerWrapper_left {
+            float: left;
+            width: 25%;
+        }
+        content.containerWrapper_right {
+            float: right;
+            width: 75%;
+            text-align: left;
+        }
+        .containerWrapper_left ,.containerWrapper_right {
+            
+        }
+        .containerWrapper_rigth input {
+           
+        }
+        label {
+            float: right;
+            text-align: right;
+            font-weight: 700;
+            font-family: Arial;
+            font-size: 13px;
+            line-height: 2;
+            min-width: 150px;
+        }
+        .submitButton_wrap {
+            margin: 20px 80% 0 20%;
+            clear: both;
+        }
+        .submitButton {
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 20px;
+            width: 60px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .submitButton:hover {
+            background-color: green;
+            color: white;
+            border: none;
+        }
+        .container_search {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 25px;
+            width: 80%;
+            min-width: 600px;
+            max-width: 800px;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+        .testas {
+            width: 30px;
         }
     </style>
 </head>
@@ -26,12 +86,41 @@
     <div class="container">
         <form>
             <fieldset>
-                <div class="containerWrapper">
+                <div class="containerWrapper_left">
+                    <label>Title</label>
+                    <label>Name</label>
+                    <label>Phone number</label>
+                    <label>Email address</label>
+                    <label>Your website</label>
+                    <label>Nr. of items to order</label>
+                    <label>Length</label>
+                    <label>Delivery date</label>
+                    <label>Time of delivery</label>
+                    <label>Color of the item</label>
 
                 </div>
-                
+                <div class="containerWrapper_right">
+                    <input type="text" name="title"></br>
+                    <input type="text" name="name"></br>
+                    <input type="number" name="phonenumber"></br>
+                    <input type="email" name="emailaddress"></br>
+                    <input type="text" name="yourwebsite"></br>
+                    <input type="text" name="username"></br>
+                    <input type="date" name="deliverydate"></br>
+                </div>
+                <div class="submitButton_wrap">
+                    <input class="submitButton" type="submit">
+                </div>
             </fieldset>
         </form>
+    </div>
+    <div class="container_search">
+        <div class="containerWrapper_left">
+            <label>Search</label>
+        </div>
+        <div class="containerWrapper_right">
+            <input class="testas submitButton" type="submit" value="Go">
+        </div>
     </div>
 </body>
 </html>
