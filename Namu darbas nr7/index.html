@@ -55,7 +55,7 @@
             clear: both;
         }
         .submitButton_wrap {
-            margin: 0px 80% 0 20%;
+            margin: 0px 78% 0 22%;
         }
         .submitButton {
             border: 1px solid black;
@@ -70,6 +70,7 @@
             background-color: green;
             color: white;
             border: none;
+            font-size: 12px;
         }
         #googleSearch {
             float: left;
@@ -95,53 +96,53 @@
         <form>
             <fieldset>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Title</label></div>
-                    <div class="containerWrapper_right"><input type="text" name="title" placeholder="Select one of, enter your own"></div>
+                    <div class="containerWrapper_left"><label for="title">Title</label></div>
+                    <div class="containerWrapper_right"><input id="title" type="text" name="title" placeholder="Select one of, enter your own"></div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Name</label></div>
-                    <div class="containerWrapper_right"><input type="text" name="name" placeholder="John Doe"></div>
+                    <div class="containerWrapper_left"><label for="name">Name</label></div>
+                    <div class="containerWrapper_right"><input id="name" type="text" name="name" placeholder="John Doe"></div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Phone number</label></div>
-                    <div class="containerWrapper_right"><input type="number" name="phonenumber" placeholder="+1 23456789">(optional)</div>
+                    <div class="containerWrapper_left"><label for="phonenumber">Phone number</label></div>
+                    <div class="containerWrapper_right"><input id="phonenumber" type="number" name="phonenumber" placeholder="+1 23456789">(optional)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Email address</label></div>
-                    <div class="containerWrapper_right"><input type="email" name="emailaddress" placeholder="email@mail.com"></div>
+                    <div class="containerWrapper_left"><label for="emailaddress">Email address</label></div>
+                    <div class="containerWrapper_right"><input id="emailaddress" type="email" name="emailaddress" placeholder="email@mail.com"></div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Your website</label></div>
-                    <div class="containerWrapper_right"><input type="url" name="yourwebsite" placeholder="www.youtube.com">(optional)</div>
+                    <div class="containerWrapper_left"><label for="yourwebsite">Your website</label></div>
+                    <div class="containerWrapper_right"><input id="yourwebsite" type="url" name="yourwebsite" placeholder="www.youtube.com">(optional)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Nr. of items to order</label></div>
-                    <div class="containerWrapper_right"><input type="number" name="quantity" min="1" max="10">(1-10)</div>
+                    <div class="containerWrapper_left"><label for="quantity">Nr. of items to order</label></div>
+                    <div class="containerWrapper_right"><input id="quantity" type="number" name="quantity" min="1" max="10">(1-10)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Length</label></div>
-                    <div class="containerWrapper_right"><input type="range" name="points" min="0" max="10">1m (in 10cm increments)</div>
+                    <div class="containerWrapper_left"><label for="points">Length</label></div>
+                    <div class="containerWrapper_right"><input id="points" type="range" name="points" min="0" max="10">1m (in 10cm increments)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Delivery date</label></div>
-                    <div class="containerWrapper_right"><input type="date" name="deliverydate" min="2010-12-16">(minimum 16 December 2010)</div>
+                    <div class="containerWrapper_left"><label for="deliverydate">Delivery date</label></div>
+                    <div class="containerWrapper_right"><input id="deliverydate" type="date" name="deliverydate" min="2010-12-16">(minimum 16 December 2010)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Time of delivery</label></div>
-                    <div class="containerWrapper_right"><input type="time" name="delivery_time" step="1800">(in 30min increments)</div>
+                    <div class="containerWrapper_left"><label for="delivery_time">Time of delivery</label></div>
+                    <div class="containerWrapper_right"><input id="delivery_time" type="time" name="delivery_time" step="1800">(in 30min increments)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
-                    <div class="containerWrapper_left"><label>Color of the item</label></div>
-                    <div class="containerWrapper_right"><input type="color" name="itemcolor" value="#ff0000">(default red)</div>
+                    <div class="containerWrapper_left"><label for="itemcolor">Color of the item</label></div>
+                    <div class="containerWrapper_right"><input id="itemcolor" type="color" name="itemcolor" value="#ff0000">(default red)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="submitButton_wrap">
@@ -153,7 +154,7 @@
     <div class="container">
         <div id="search_ContentLine" class="contentLine">
             <div class="containerWrapper_left">
-                <label>Search</label>
+                <label for="googleSearch">Search</label>
             </div>
             <div class="containerWrapper_right">
                 <input id="googleSearch" type="search" name="googlesearch">
