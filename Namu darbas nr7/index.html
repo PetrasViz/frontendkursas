@@ -28,8 +28,8 @@
             border: none;
             height: 100%;
             width: 100%;
+            padding: 0;
         }
-
         .containerWrapper_left {
             float: left;
             width: 25%;
@@ -41,7 +41,6 @@
             padding-left: 10px;
         }
         .containerWrapper_left label {
-            display: inline-block;
             text-align: right;
             line-height: 2;
             font-weight: 700;
@@ -50,7 +49,7 @@
         .contentLine {
             display: block;
             text-align: right;
-            margin: 8px;
+            margin: 4px;
         }
         .clearboth {
             clear: both;
@@ -65,22 +64,29 @@
             width: 60px;
             font-size: 10px;
             text-align: center;
-            margin-top: 30px;
+            margin: 30px 0 20px 0;
         }
         .submitButton:hover {
             background-color: green;
             color: white;
             border: none;
         }
-        .container_search {
-            min-width: 500px;
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: lightgray;
-            border-radius: 5px;
+        #googleSearch {
+            float: left;
+            width: 120px;
+            border-radius: 10px;
+            padding-right: 0;
+            margin-right: 0;
         }
-        .testas {
+        #goButton {
+            float: left;
             width: 30px;
+            padding: 0;
+            margin: 0 0 0 10px;
+            font-size: 12px;
+        }
+        #search_ContentLine {
+            padding-top: 15px;
         }
     </style>
 </head>
@@ -100,7 +106,7 @@
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Phone number</label></div>
-                    <div class="containerWrapper_right"><input type="number" name="phonenumber" placeholder="+1 23456789"></div>
+                    <div class="containerWrapper_right"><input type="number" name="phonenumber" placeholder="+1 23456789">(optional)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
@@ -110,32 +116,32 @@
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Your website</label></div>
-                    <div class="containerWrapper_right"><input type="url" name="yourwebsite" placeholder="www.youtube.com"></div>
+                    <div class="containerWrapper_right"><input type="url" name="yourwebsite" placeholder="www.youtube.com">(optional)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Nr. of items to order</label></div>
-                    <div class="containerWrapper_right"><input type="number" name="quantity" min="1" max="10"></div>
+                    <div class="containerWrapper_right"><input type="number" name="quantity" min="1" max="10">(1-10)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Length</label></div>
-                    <div class="containerWrapper_right"><input type="range" name="points" min="0" max="10"></div>
+                    <div class="containerWrapper_right"><input type="range" name="points" min="0" max="10">1m (in 10cm increments)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Delivery date</label></div>
-                    <div class="containerWrapper_right"><input type="date" name="deliverydate" min="2010-12-16"></div>
+                    <div class="containerWrapper_right"><input type="date" name="deliverydate" min="2010-12-16">(minimum 16 December 2010)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Time of delivery</label></div>
-                    <div class="containerWrapper_right"><input type="time" name="delivery_time" step="1800"></div>
+                    <div class="containerWrapper_right"><input type="time" name="delivery_time" step="1800">(in 30min increments)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="contentLine">
                     <div class="containerWrapper_left"><label>Color of the item</label></div>
-                    <div class="containerWrapper_right"><input type="color" name="itemcolor" value="#ff0000"></div>
+                    <div class="containerWrapper_right"><input type="color" name="itemcolor" value="#ff0000">(default red)</div>
                 </div>
                 <div class="clearboth"></div>
                 <div class="submitButton_wrap">
@@ -144,14 +150,33 @@
             </fieldset>
         </form>
     </div>
-    <div class="container_search">
-        <div class="containerWrapper_left">
-            <label>Search</label>
-        </div>
-        <div class="containerWrapper_right">
-            <input type="search" name="googlesearch">
-            <input class="testas submitButton" type="submit" value="Go">
+    <div class="container">
+        <div id="search_ContentLine" class="contentLine">
+            <div class="containerWrapper_left">
+                <label>Search</label>
+            </div>
+            <div class="containerWrapper_right">
+                <input id="googleSearch" type="search" name="googlesearch">
+                <input id="goButton" class="testas submitButton" type="submit" value="Go">
+            </div>
+            <div class="clearboth"></div>
         </div>
     </div>
+
+
+
+
+    <!--<div id="searchBox" class="container">
+        <div class="contentLine">
+            <div class="containerWrapper_left">
+                <label>Search</label>
+            </div>
+            <div class="containerWrapper_right">
+                <input type="search" name="googlesearch">
+                <input class="testas submitButton" type="submit" value="Go">
+            </div>
+            <div class="clearboth"></div>
+        </div>
+    </div>-->
 </body>
 </html>
