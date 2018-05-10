@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <title>Namu darbas nr7</title>
     <style>
+        * {
+            box-sizing: border-box;
+            font-family:sans-serif;
+        }
         body {
             background-color: white;
             width: 100%;
@@ -12,45 +16,47 @@
         }
         .container {
             width: 80%;
-            min-width: 600px;
+            min-width: 500px;
             max-width: 800px;
             background-color: lightgray;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            margin: 0 auto;
+            padding: 0;
             border-radius: 5px;
         }
         form, fieldset {
+            position: relative;
             border: none;
+            height: 100%;
+            width: 100%;
         }
+
         .containerWrapper_left {
             float: left;
             width: 25%;
         }
-        content.containerWrapper_right {
+        .containerWrapper_right {
             float: right;
             width: 75%;
             text-align: left;
+            padding-left: 10px;
         }
-        .containerWrapper_left ,.containerWrapper_right {
-            
-        }
-        .containerWrapper_rigth input {
-           
-        }
-        label {
-            float: right;
+        .containerWrapper_left label {
+            display: inline-block;
             text-align: right;
-            font-weight: 700;
-            font-family: Arial;
-            font-size: 13px;
             line-height: 2;
-            min-width: 150px;
+            font-weight: 700;
+            font-size: 12px;
+        }
+        .contentLine {
+            display: block;
+            text-align: right;
+            margin: 8px;
+        }
+        .clearboth {
+            clear: both;
         }
         .submitButton_wrap {
-            margin: 20px 80% 0 20%;
-            clear: both;
+            margin: 0px 80% 0 20%;
         }
         .submitButton {
             border: 1px solid black;
@@ -59,6 +65,7 @@
             width: 60px;
             font-size: 10px;
             text-align: center;
+            margin-top: 30px;
         }
         .submitButton:hover {
             background-color: green;
@@ -66,14 +73,9 @@
             border: none;
         }
         .container_search {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 25px;
-            width: 80%;
-            min-width: 600px;
+            min-width: 500px;
             max-width: 800px;
+            margin: 0 auto;
             background-color: lightgray;
             border-radius: 5px;
         }
@@ -86,28 +88,56 @@
     <div class="container">
         <form>
             <fieldset>
-                <div class="containerWrapper_left">
-                    <label>Title</label>
-                    <label>Name</label>
-                    <label>Phone number</label>
-                    <label>Email address</label>
-                    <label>Your website</label>
-                    <label>Nr. of items to order</label>
-                    <label>Length</label>
-                    <label>Delivery date</label>
-                    <label>Time of delivery</label>
-                    <label>Color of the item</label>
-
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Title</label></div>
+                    <div class="containerWrapper_right"><input type="text" name="title" placeholder="Select one of, enter your own"></div>
                 </div>
-                <div class="containerWrapper_right">
-                    <input type="text" name="title"></br>
-                    <input type="text" name="name"></br>
-                    <input type="number" name="phonenumber"></br>
-                    <input type="email" name="emailaddress"></br>
-                    <input type="text" name="yourwebsite"></br>
-                    <input type="text" name="username"></br>
-                    <input type="date" name="deliverydate"></br>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Name</label></div>
+                    <div class="containerWrapper_right"><input type="text" name="name" placeholder="John Doe"></div>
                 </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Phone number</label></div>
+                    <div class="containerWrapper_right"><input type="number" name="phonenumber" placeholder="+1 23456789"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Email address</label></div>
+                    <div class="containerWrapper_right"><input type="email" name="emailaddress" placeholder="email@mail.com"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Your website</label></div>
+                    <div class="containerWrapper_right"><input type="url" name="yourwebsite" placeholder="www.youtube.com"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Nr. of items to order</label></div>
+                    <div class="containerWrapper_right"><input type="number" name="quantity" min="1" max="10"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Length</label></div>
+                    <div class="containerWrapper_right"><input type="range" name="points" min="0" max="10"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Delivery date</label></div>
+                    <div class="containerWrapper_right"><input type="date" name="deliverydate" min="2010-12-16"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Time of delivery</label></div>
+                    <div class="containerWrapper_right"><input type="time" name="delivery_time" step="1800"></div>
+                </div>
+                <div class="clearboth"></div>
+                <div class="contentLine">
+                    <div class="containerWrapper_left"><label>Color of the item</label></div>
+                    <div class="containerWrapper_right"><input type="color" name="itemcolor" value="#ff0000"></div>
+                </div>
+                <div class="clearboth"></div>
                 <div class="submitButton_wrap">
                     <input class="submitButton" type="submit">
                 </div>
@@ -119,6 +149,7 @@
             <label>Search</label>
         </div>
         <div class="containerWrapper_right">
+            <input type="search" name="googlesearch">
             <input class="testas submitButton" type="submit" value="Go">
         </div>
     </div>
