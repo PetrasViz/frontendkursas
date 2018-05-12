@@ -1,0 +1,107 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+* {
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: "Amatic SC", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+/*Navigation bar style below*/
+#fixedNavBar {
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+}
+#fixedNavBar:hover {
+    opacity: 1;
+}
+#fixedNavBar ul {
+    margin: 0;
+    padding: 0;
+}
+#fixedNavBar li {
+    margin: auto;
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    vertical-align: middle;
+    padding: 8px 16px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+#fixedNavBar li:hover {
+    background-color: lightgray;
+    color: black;
+}
+/*Main boxes for content*/
+.mainBoxes {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+#pizzaBackground {
+    background: url(../img/pizza.jpg);
+    filter: grayscale(50%);
+    height: 555px;
+}
+/*Content wrapper position ABSOLUTE perfect center*/
+.contentPositionCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+}
+/*Open time on top of pizza background*/
+#openTime_positionAbsulute {
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 24px;
+}
+/*THIN CRUST PIZZA Paragraph*/
+.contentPositionCenter p1 {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    margin: 0 auto;
+}
+/**/
+/*@media if browser screen size bigger than 600px*/
+@media only screen and (min-width: 600px) {
+    #fixedNavBar {
+        visibility: visible;
+        z-index: 999;
+    }
+}
