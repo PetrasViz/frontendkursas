@@ -7,7 +7,7 @@
     <style>
         * {
             box-sizing: border-box;
-            font-family:sans-serif;
+            font-family: sans-serif;
         }
         body {
             background-color: white;
@@ -152,20 +152,19 @@
         </form>
     </div>
     <div class="container">
-        <div id="search_ContentLine" class="contentLine">
-            <div class="containerWrapper_left">
-                <label for="googleSearch">Search</label>
+        <form action="http://www.google.com/search" method="get">
+            <div id="search_ContentLine" class="contentLine">
+                <div class="containerWrapper_left">
+                    <label for="googleSearch">Search</label>
+                </div>
+                <div class="containerWrapper_right">
+                    <input id="googleSearch" type="search" name="googlesearch">
+                    <input onclick="search()" id="goButton" class="testas submitButton" type="submit" value="Go">
+                </div>
+                <div class="clearboth"></div>
             </div>
-            <div class="containerWrapper_right">
-                <input id="googleSearch" type="search" name="googlesearch">
-                <input id="goButton" class="testas submitButton" type="submit" value="Go">
-            </div>
-            <div class="clearboth"></div>
-        </div>
+        </form>
     </div>
-
-
-
 
     <!--<div id="searchBox" class="container">
         <div class="contentLine">
