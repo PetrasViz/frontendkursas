@@ -3,8 +3,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Namu darbas nr8</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 <body>
      <!--FIXED NAV BAR ON TOP OF PAGE-->
@@ -17,130 +18,171 @@
         </ul>
     </div>
     <!--HEADER-->
-    <div class="mainBlocks fontWhite">
+    <div id="pizzaBackground" class="mainBlocks fontWhite">
         <header class="alignContentCenter">
             <div>
                 <h1>THIN CRUST PIZZA</h1>
-                <a href="#"><button class="fontWhite">LET ME SEE THE MENU</button></a>
+                <a href="#theMenu"><button class="fontWhite">LET ME SEE THE MENU</button></a>
             </div>
-            <div>OPEN FROM 10AM TO 12PM</div>
         </header>
+        <div id="opentime">OPEN FROM 10AM TO 12PM</div>
     </div>
     <!--START of the menu listings -->
     <div class="mainBlocks">
         <div class="alignContentCenter">
-            <h2 class="fontWhite">THE MENU</h2>
-            <div>
-                <div>
-                    <button class="fontWhite">PIZZA</button>
-                    <button class="fontWhite">SALADS</button>
-                    <button class="fontWhite">STARTER</button>
+            <h2 id="theMenu" class="fontWhite">THE MENU</h2>
+            <div id="fullMenuWrapper">
+                <div id="menuSelectionButtons">
+                    <button id="pizza" class="fontWhite" onclick="pizza()">PIZZA</button>
+                    <button id="salads" class="fontWhite" onclick="salads()">SALADS</button>
+                    <button id="starter" class="fontWhite" onclick="starter()">STARTER</button>
                 </div>
                 <!--PIZZA List-->
-                <div>
-                    <div>
-                        <div>MARGHERITA</div>
-                        <div></div>
-                        <div class="fontWhite">$12.50</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, FRESH MOZZARELLA, FRESH BASIL</div>
+                <div id="menuItemsWrapper">
+                    <div id="pizzaList">
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">MARGHERITA</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$12.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, FRESH MOZZARELLA, FRESH BASIL</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">FORMAGGIO</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$15.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FOUR CHEESES (MOZZARELLA, PARMESAN, PECORINO, JARLSBERG)</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">CHICKEN</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$17.00</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, MOZZARELLA, CHICKEN, ONIONS</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">PINEAPPLE'O'CLOCK</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$16.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, MOZZARELLA, FRESH PINEAPPLE, BACON, FRESH BASIL</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">MEAT TOWN</div>
+                                <div class="itemsName_Extra hot">HOT!</div>
+                                <div class="fontWhite listingPrice">$20.00</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, MOZZARELLA, HOT PEPPORONI, HOT SAUSAGE, BEEF, CHICKEN</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">PARMA</div>
+                                <div class="itemsName_Extra new-popular-seasonal">NEW</div>
+                                <div class="fontWhite listingPrice">$21.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</div>
+                        </div>
                     </div>
-                    <div>
-                        <div>FORMAGGIO</div>
-                        <div></div>
-                        <div class="fontWhite">$15.50</div>
-                        <div class="clearFloats"></div>
-                        <div>FOUR CHEESES (MOZZARELLA, PARMESAN, PECORINO, JARLSBERG)</div>
+                    <!--SALAD List-->
+                    <div id="saladList">
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">LASAGNA</div>
+                                <div class="itemsName_Extra new-popular-seasonal">POPULAR</div>
+                                <div class="fontWhite listingPrice">$13.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">SPECIAL SOUCE, MOZZARELLA, PARMESAN, GROUND BEEF</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">RAVIOLI</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$14.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">RAVIOLI FILLED WITH CHEESE</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">SPGHETTI CLASSICA</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$11.00</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">FRESH TOMATOES, ONIONS, GROUND BEEF</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">SEAFOOD PASTA</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$25.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">SALMON, SHRIMP, LOBSTER, GARLIC</div>
+                        </div>
                     </div>
-                    <div>
-                        <div>CHICKEN</div>
-                        <div></div>
-                        <div class="fontWhite">$17.00</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, MOZZARELLA, CHICKEN, ONIONS</div>
-                    </div>
-                    <div>
-                        <div>PINEAPPLE'O'CLOCK</div>
-                        <div></div>
-                        <div class="fontWhite">$16.50</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, MOZZARELLA, FRESH PINEAPPLE, BACON, FRESH BASIL</div>
-                    </div>
-                    <div>
-                        <div>MEAT TOWN</div>
-                        <div>HOT!</div>
-                        <div class="fontWhite">$20.00</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, MOZZARELLA, HOT PEPPORONI, HOT SAUSAGE, BEEF, CHICKEN</div>
-                    </div>
-                    <div>
-                        <div>PARMA</div>
-                        <div>NEW</div>
-                        <div class="fontWhite">$21.50</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, MOZZARELLA, PARMA, BACON, FRESH ARUGULA</div>
-                    </div>
-                </div>
-                <!--SALAD List-->
-                <div>
-                    <div>
-                        <div>LASAGNA</div>
-                        <div>POPULAR</div>
-                        <div class="fontWhite">$13.50</div>
-                        <div class="clearFloats"></div>
-                        <div>SPECIAL SOUCE, MOZZARELLA, PARMESAN, GROUND BEEF</div>
-                    </div>
-                    <div>
-                        <div>RAVIOLI</div>
-                        <div></div>
-                        <div class="fontWhite">$14.50</div>
-                        <div class="clearFloats"></div>
-                        <div>RAVIOLI FILLED WITH CHEESE</div>
-                    </div>
-                    <div>
-                        <div>SPGHETTI CLASSICA</div>
-                        <div></div>
-                        <div class="fontWhite">$11.00</div>
-                        <div class="clearFloats"></div>
-                        <div>FRESH TOMATOES, ONIONS, GROUND BEEF</div>
-                    </div>
-                    <div>
-                        <div>SEAFOOD PASTA</div>
-                        <div></div>
-                        <div class="fontWhite">$25.50</div>
-                        <div class="clearFloats"></div>
-                        <div>SALMON, SHRIMP, LOBSTER, GARLIC</div>
-                    </div>
-                </div>
-                <!--STARTER List-->
-                <div>
-                    <div>
-                        <div>TODAY'S SOUP</div>
-                        <div>SEASONAL</div>
-                        <div class="fontWhite">$5.50</div>
-                        <div class="clearFloats"></div>
-                        <div>ASK THE WAITER</div>
-                    </div>
-                    <div>
-                        <div>BRUSCHETTA</div>
-                        <div></div>
-                        <div class="fontWhite">$8.50</div>
-                        <div class="clearFloats"></div>
-                        <div>BREAD WITH PESTO, TOMATOES, ONION, GARLIC</div>
-                    </div>
-                    <div>
-                        <div>GARLIC BREAD</div>
-                        <div></div>
-                        <div class="fontWhite">$9.50</div>
-                        <div class="clearFloats"></div>
-                        <div>GRILLED CIABATTA, GARLIC BUTTER, ONIONS</div>
-                    </div>
-                    <div>
-                        <div>TOMOZZARELLA</div>
-                        <div></div>
-                        <div class="fontWhite">$10.50</div>
-                        <div class="clearFloats"></div>
-                        <div>TOMATOES AND MOZZARELLA</div>
+                    <!--STARTER List-->
+                    <div id="starterList">
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">TODAY'S SOUP</div>
+                                <div class="itemsName_Extra new-popular-seasonal">SEASONAL</div>
+                                <div class="fontWhite listingPrice">$5.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">ASK THE WAITER</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">BRUSCHETTA</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$8.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">BREAD WITH PESTO, TOMATOES, ONION, GARLIC</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">GARLIC BREAD</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$9.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">GRILLED CIABATTA, GARLIC BUTTER, ONIONS</div>
+                        </div>
+                        <hr />
+                        <div class="pizzaRows">
+                            <div>
+                                <div class="itemsName">TOMOZZARELLA</div>
+                                <div class="itemsName_Extra"></div>
+                                <div class="fontWhite listingPrice">$10.50</div>
+                            </div>
+                            <div class="clearFloats"></div>
+                            <div class="itemsIngredients">TOMATOES AND MOZZARELLA</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,5 +270,31 @@
         <footer class="fontWhite">POWERED BY <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3.CSS</a>
         </footer>
     </div>
+    <script>
+        function pizza() {
+            document.getElementById("pizzaList").style.display = "block";
+            document.getElementById("saladList").style.display = "none";
+            document.getElementById("starterList").style.display = "none";
+            document.getElementById("pizza").style.backgroundColor = "#f44336";
+            document.getElementById("salads").style.backgroundColor = "black";
+            document.getElementById("starter").style.backgroundColor = "black";
+        }
+        function salads() {
+            document.getElementById("pizzaList").style.display = "none";
+            document.getElementById("saladList").style.display = "block";
+            document.getElementById("starterList").style.display = "none";
+            document.getElementById("pizza").style.backgroundColor = "black";
+            document.getElementById("salads").style.backgroundColor = "#f44336";
+            document.getElementById("starter").style.backgroundColor = "black";
+        }
+        function starter() {
+            document.getElementById("pizzaList").style.display = "none";
+            document.getElementById("saladList").style.display = "none";
+            document.getElementById("starterList").style.display = "block";
+            document.getElementById("pizza").style.backgroundColor = "black";
+            document.getElementById("salads").style.backgroundColor = "black";
+            document.getElementById("starter").style.backgroundColor = "#f44336";
+        }
+    </script>
 </body>
 </html>
