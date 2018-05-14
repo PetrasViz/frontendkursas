@@ -148,24 +148,24 @@ input {
 }
 .alignContentCenter {
     position: relative;
-    width: 92%;
-    min-width: 360px;
-    margin: 0 auto;
+    margin: 0 4%;
 }
 /*CONTENT BLOCKS STYLE*/
 .mainBlocks {
     position: relative;
     width: 100%;
-    min-width: 360px;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
 }
 #headerTextBox {
-    position: relative;
-    margin: 0 auto;
-    bottom: 110px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
 }
 #pizzaBackground {
     position: relative;
@@ -177,7 +177,6 @@ input {
     filter: grayscale(0.5);
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 #fullMenuWrapper {
     margin-bottom: 100px;
@@ -200,12 +199,13 @@ input {
 }
 #pizza, #salads, #starter {
     position: relative;
+    top: 1px;
     left: 1px;
-    width: 33.33%;
+    width: 33.2%;
     color: white;
     border: none;
     outline: none;
-    height: 80px;
+    height: 99.9%;
     line-height: 54px;
     padding: 12px 0;
     margin: 0;
@@ -230,9 +230,6 @@ input {
 #aboutBlock h3 {
     font-weight: 700;
 }
-#mrItaliano {
-    min-width: 360px;
-}
 #googleMaps {
     padding: 0;
     margin: 0;
@@ -246,13 +243,6 @@ input {
     background-color: #6c7a81;
 }
 /*Header design*/
-header {
-    text-align: center;
-    display: block;
-    position: relative;
-    top: 220px;
-    margin: 0 auto;
-}
 #opentime {
     position: absolute;
     bottom: 6px;
@@ -344,8 +334,11 @@ header {
         display: block;
         z-index: 999;
     }
+}
+/*@media if browser screen size bigger than 1052px*/
+@media only screen and (min-width: 1052px) {
     .alignContentCenter {
-        max-width: 980px;
         margin: 0 auto;
+        max-width: 980px;
     }
 }
