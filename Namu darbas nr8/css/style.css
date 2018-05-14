@@ -185,7 +185,7 @@ input {
 }
 #menuSelectionButtons {
     width: 100%;
-    height: 80px;
+    height: 81px;
     border: 1px solid grey;
     margin: 0;
     padding: 0;
@@ -201,11 +201,12 @@ input {
 }
 #pizza, #salads, #starter {
     position: relative;
-    width: 33.33333333333333%;
+    top: 1px;
+    width: 33.33333333333332%;
     color: white;
     border: none;
     outline: none;
-    height: 99.9%;
+    height: 100%;
     line-height: 54px;
     padding: 0;
     margin: 0;
@@ -345,6 +346,11 @@ input {
     #fixedNavBar {
         display: block;
         z-index: 999;
+    }
+    #pizza, #salads, #starter {
+        position: relative;
+        top: 0px;
+        left: 1px;
     }
 }
 /*@media if browser screen size bigger than 1052px*/
