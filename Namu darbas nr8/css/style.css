@@ -5,13 +5,12 @@
 }
 /*Navigation bar style below*/
 #fixedNavBar {
-    visibility: hidden;
-    overflow: hidden;
+    display: none;
     position: fixed;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 50px;
+    height: 52px;
     color: white;
     background-color: black;
     opacity: 0.6;
@@ -24,16 +23,15 @@
 #fixedNavBar ul {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 #fixedNavBar li {
-    margin: auto;
     display: inline-block;
     width: auto;
-    height: 50px;
+    height: 100%;
     text-align: center;
     font-size: 24px;
-    vertical-align: middle;
-    padding: 8px 16px;
+    padding: 11px 16px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -52,6 +50,8 @@ h1 {
     font-size: 100px;
     line-height: 150px;
     text-size-adjust: 100%;
+    margin: 0 auto;
+    font-weight: 400;
 }
 h2 {
     font-size: 64px;
@@ -76,6 +76,17 @@ p {
     margin: 0;
     padding: 15px 0;
 }
+input {
+    width: 100%;
+    height: 60px;
+    padding: 16px 8px;
+    margin: 8px 0px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    font-stretch: 100%;
+    vertical-align: middle;
+    outline: none;
+}
 .forYourInfo {
     position: relative;
     display: block;
@@ -88,6 +99,15 @@ p {
     text-size-adjust: 100%;
     margin: 0;
     top: 18px;
+}
+#pizzaBackground button {
+    display: inline-block;
+    background-color: black;
+    height: 70px;
+    font-size: 36px;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
 }
 #restaurant {
     margin-top: 20px;
@@ -109,17 +129,6 @@ p {
 #lastParagraph {
     padding-bottom: 0;
 }
-input {
-    width: 100%;
-    height: 60px;
-    padding: 16px 8px;
-    margin: 8px 0px;
-    border: 1px solid lightgray;
-    font-size: 20px;
-    font-stretch: 100%;
-    vertical-align: middle;
-    outline: none;
-}
 #sendMessage {
     height: 40px;
     line-height: 0.2;
@@ -140,30 +149,35 @@ input {
 .alignContentCenter {
     position: relative;
     width: 92%;
-    min-width: 340px;
+    min-width: 360px;
     margin: 0 auto;
 }
 /*CONTENT BLOCKS STYLE*/
 .mainBlocks {
     position: relative;
     width: 100%;
-    min-width: 340px;
+    min-width: 360px;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
 }
+#headerTextBox {
+    position: relative;
+    margin: 0 auto;
+    bottom: 110px;
+}
 #pizzaBackground {
     position: relative;
-    background: black url('../img/pizza.jpg') center no-repeat;
+    display: block;
+    background:  url('../img/pizza.jpg') no-repeat left;
     background-size: cover;
-    min-height: 90%;
-    height: 667px;
-    width: 686px;
-    min-width: 100%;
+    min-height: 90vh;
+    width: 100%;
     filter: grayscale(0.5);
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 #fullMenuWrapper {
     margin-bottom: 100px;
@@ -185,7 +199,9 @@ input {
     background-color: black;
 }
 #pizza, #salads, #starter {
-    width: 33.3333333333334%;
+    position: relative;
+    left: 1px;
+    width: 33.33%;
     color: white;
     border: none;
     outline: none;
@@ -214,6 +230,9 @@ input {
 #aboutBlock h3 {
     font-weight: 700;
 }
+#mrItaliano {
+    min-width: 360px;
+}
 #googleMaps {
     padding: 0;
     margin: 0;
@@ -229,6 +248,10 @@ input {
 /*Header design*/
 header {
     text-align: center;
+    display: block;
+    position: relative;
+    top: 220px;
+    margin: 0 auto;
 }
 #opentime {
     position: absolute;
@@ -249,10 +272,11 @@ header {
     line-height: 54px;
     text-size-adjust: 100%;
 }
-hr {
+#menuItemsWrapper hr {
+    visibility: visible;
     height: 1px;
-    background-color: lightgrey;
-    opacity: 0.1;
+    background-color: black;
+    opacity: 0.2;
     width: 96%;
 }
 .itemsName {
@@ -317,7 +341,7 @@ hr {
 /*@media if browser screen size bigger than 600px*/
 @media only screen and (min-width: 600px) {
     #fixedNavBar {
-        visibility: visible;
+        display: block;
         z-index: 999;
     }
     .alignContentCenter {
