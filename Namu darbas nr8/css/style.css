@@ -23,12 +23,12 @@
 #fixedNavBar ul {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 52px;
 }
 #fixedNavBar li {
     display: inline-block;
     width: auto;
-    height: 100%;
+    height: 52px;
     text-align: center;
     font-size: 24px;
     padding: 11px 16px;
@@ -40,9 +40,12 @@
     color: black;
 }
 /*Main design rules for website()*/
-body {
-    width: 100%;
+html {
     height: 100%;
+}
+body {
+    background-color: black;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
@@ -157,27 +160,26 @@ input {
 .mainBlocks {
     position: relative;
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     background-color: black;
 }
 #headerTextBox {
-    margin: 0 auto 50px auto;
-    padding-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
     text-align: center;
     z-index: 100;
 }
 #pizzaBackground {
     position: relative;
-    display: block;
     background:  url('../img/pizza.jpg') no-repeat left;
     background-size: cover;
-    min-height: 90vh;
-    max-height: 100%;
+    min-height: 90%;
     width: 100%;
     filter: grayscale(0.5);
-    padding: 0;
+    padding: 400px 0;
     margin: 0;
 }
 #fullMenuWrapper {
@@ -201,18 +203,19 @@ input {
 }
 #pizza, #salads, #starter {
     position: relative;
-    top: 1px;
-    width: 33.33333333333332%;
+    width: 33.33%;
     color: white;
     border: none;
     outline: none;
-    height: 100%;
+    height: 80px;
     line-height: 54px;
     padding: 0;
     margin: 0;
     font-size: 36px;
     text-size-adjust: 100%;
     float: left;
+    transition: ease-in-out;
+    transition-duration: 500ms;
 }
 #salads:hover, #pizza:hover, #starter:hover {
     background-color: #f44336!important;
@@ -267,7 +270,6 @@ input {
 }
 /*MENU ITEMS DESIGN*/
 .pizzaRows {
-    height: 100%;
     width: 96%;
     margin: 0 auto;
     padding: 36px 0;
@@ -358,5 +360,8 @@ input {
     .alignContentCenter {
         margin: 0 auto;
         max-width: 980px;
+    }
+    #headerTextBox {
+        padding: 200px 0;
     }
 }
