@@ -1,83 +1,13 @@
 ﻿*, *::after, *::before {
     box-sizing: border-box;
 }
-html {
-    height: 100%;
-}
-body
-{
+body {
     width: 100%;
-    padding: 0;
-    margin: 0;
-}
-.mainWrap {
-    margin: 0 auto;
-    width: 96%;
-    text-align: center;
-}
-li {
-    display: inline-block;
-}
-header {
-    background-color: #2e2e2e;
-    height: 60px;
-    width: 100%;
-}
-#header {
-    position: relative;
-    height: 60px;
-    padding: 0;
-}
-#topList {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    padding: 0;
-    height: 60px;
-}
-#topList ul {
-    
     margin: 0;
     padding: 0;
-    text-align: left;
 }
-#topList li {
-    color: #9f9f9f;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-/*Float left and right / clearfix*/
-.floatLeft {
-    float: left;
-}
-.floatRight {
-    float: right;
-}
-.clearFix {
-    clear: both;
-}
-/*Social links*/
-#buttonWrapper {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    height: 32px;
-}
-#buttonWrapper i {
-    padding-top: 7px;
-    font-size: 18px;
-    color: white;
-}
-.button-bgn {
-    background-color: rgb(120,120,120);
-    height: 100%;
-    width: 32px;
-    border: none;
-    border-radius: 16px;
-    text-align: center;
-    margin-left: 5px;
+
+@media only screen and (min-width: 641px) {
+
 }
 
