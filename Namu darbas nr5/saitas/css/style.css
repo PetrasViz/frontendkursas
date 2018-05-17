@@ -1,13 +1,226 @@
 ﻿*, *::after, *::before {
     box-sizing: border-box;
 }
+/*TAGS style*/
 body {
+    display: block;
     width: 100%;
     margin: 0;
     padding: 0;
 }
-
-@media only screen and (min-width: 641px) {
-
+li {
+    display: inline-block;
 }
+i {
+    font-size: 16px;
+}
+/*CLASS style*/
+.mainBlocks {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0;
+}
+.contentAlign {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.clearBoth {
+    clear: both;
+}
+/*ID style*/
+#topBlock {
+    background-color: #2e2e2e;
+    min-height: 60px;
+}
+#topBlock ul {
+    margin: 0;
+    padding: 0;
+}
+#options {
+    display: inline-block;
+}
+#options li {
+    height: 10px;
+    font-size: 10px;
+    color: #9f9f9f;
+    text-decoration: none;
+}
+#options a li:hover {
+    color: blue;
+}
+#socialLinks {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 100%;
+}
+#socialLinks i {
+    margin-left: 10px;
+}
+#socialLinks a i {
+    color: white;
+    background-color: #787878;
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    border-radius: 16px;
+}
+#socialLinks a i:hover {
+    color: blue;
+}
+#firstButton {
+    position: relative;
+    top: -4px;
+    text-align: right;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    transition: top 100ms;
+    transition-timing-function: linear;
+    outline: none;
+}
+#firstButton:hover {
+    top: 0px;
+}
+#firstButton button {
+    height: 31px;
+    width: 31px;
+    border: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    color: white;
+    background-color: #2e2e2e;
+}
+#firstButton button:hover {
+    color: blue;
+}
+#navBar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    font-size: 14px;
+}
+#navBar li {
+    display: block;
+    font-weight: 400;
+    border-bottom: 5px solid #f1f1f1;
+    transition: border-bottom-color 400ms linear, font-weight 400ms linear;
+}
+#navBar li:hover {
+    font-weight: 700;
+    cursor: pointer;
+    border-bottom-color: #0099ff;
+}
+#searchInput {
+    border: none;
+    height: 31px;
+    width: 215px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+#searchButton {
+    border: none;
+    height: 31px;
+    width: 68px;
+    background-color: #0099ff;
+    border-radius: 6px;
+}
+#headerOne {
+    font-size: 25px;
+}
+#headerOne h1 {
+    margin: 0;
+}
+#contentOne p {
+    font-size: 9px;
+    color: #999999;
+}
+#middleOne {
+    margin-top: 54px;
+    background-color: #f1f1f1;
+}
+#contentTwo {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 550px;
+    min-height: 440px;
+    background-color: #333333;
+}
+@media only screen and (min-width: 641px) {
+    /*TAGS style*/
+    /*CLASS style*/
+    .contentAlign {
+       padding: 18px 0;
+    }
+    /*ID style*/
+    #topBlock {
+        max-height: 60px;
+    }
+    #socialLinks {
+        bottom: 5px;
+        float: right;
+        width: auto;
+        margin-top: 0;
+    }
+    #options {
+        width: auto;
+        float: left;
+    }
+    #upperOne {
+        height: 53px;
+    }
+    #headerOne {
+        text-align: left;
+    }
+    #contentOne {
+        text-align: left;
+    }
+    #contentOne p {
+        float: left;
+    }
+    #contentOne form {
+        float: right;
+    }
+}
+@media only screen and (min-width: 750px) {
+    /*TAGS style*/
+    /*CLASS style*/
+    
+    /*ID style*/
+    #navBar {
+        border-bottom: 5px solid #f1f1f1;
+        height: 57px;
+        text-align: left;
+        width: auto;
+    }
+    #navBar li {
+        display: inline-block;
+        margin-right: 20px;
+        padding: 20px 0;
+        font-size: 10px;
+    }
+    #headerTwo {
+        width: 40%;
+        float: left;
+        text-align: left;
+    }
+    #headerTwo_right {
+        float: right;
+        width: 60%;
+    }
+    #contentTwo {
+        position: relative;
+        height: 440px;
+        width: 550px;
+    }
+}
+
 
