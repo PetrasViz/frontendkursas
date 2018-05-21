@@ -14,16 +14,18 @@ li {
 i {
     font-size: 16px;
 }
+h2 {
+    line-height: 25px;
+    font-size: 25px;
+}
 /*CLASS style*/
 .mainBlocks {
-    width: 100%;
     padding: 0 20px;
     margin: 0;
 }
 .contentAlign {
     position: relative;
     display: block;
-    width: 100%;
     max-width: 960px;
     padding: 10px 0;
     margin: 0 auto;
@@ -32,8 +34,54 @@ i {
 .clearBoth {
     clear: both;
 }
+.midBrake {
+    width: 100%;
+    margin: 0 auto;
+}
+.fourBlocks {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.fourBlocks h5 {
+    color: white;
+    font-size: 12px;
+}
+.fourBlocks a {
+    font-size: 12px;
+    color: #0099ff;
+    text-decoration: none;
+}
+.inPut {
+    width: 100%;
+    background-color: #232323;
+    color: #989898;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.noMarg {
+    margin: 0;
+    font-size: 11px;
+    line-height: 0.5;
+}
+.noMarg a {
+    color: inherit;
+}
+.bigerPar {
+    font-size: 13px;
+}
+.fixedRight {
+    float: right;
+}
+.fixedRight:hover {
+    color: white;
+}
 /*ID style*/
 #topBlock {
+    position: relative;
+    z-index: 5;
     background-color: #2e2e2e;
     min-height: 60px;
 }
@@ -75,31 +123,38 @@ i {
 #socialLinks a i:hover {
     color: blue;
 }
-#firstButton {
+#buttonPad {
     position: relative;
-    top: -4px;
+    display: block;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+#firstButton {
     text-align: right;
-    height: 35px;
+    width: 100%;
+    height: 31px;
     margin: 0;
     padding: 0;
-    transition: top 100ms;
-    transition-timing-function: linear;
-    outline: none;
-}
-#firstButton:hover {
-    top: 0px;
 }
 #firstButton button {
-    height: 31px;
+    position: relative;
+    top: -5px;
+    height: 36px;
     width: 31px;
     border: none;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
     color: white;
     background-color: #2e2e2e;
+    z-index: 1;
+    transition: top 100ms;
+    transition-timing-function: linear;
+    outline: none;
 }
 #firstButton button:hover {
     color: blue;
+    top: 0px;
 }
 #navBar {
     display: block;
@@ -125,6 +180,7 @@ i {
     width: 215px;
     background-color: #f1f1f1;
     border-radius: 6px;
+    padding-left: 7px;
 }
 #searchButton {
     border: none;
@@ -132,9 +188,13 @@ i {
     width: 68px;
     background-color: #0099ff;
     border-radius: 6px;
+    color: white;
+}
+#searchButton:hover {
+    color: black;
 }
 #headerOne {
-    font-size: 25px;
+    font-size: 20px;
 }
 #headerOne h1 {
     margin: 0;
@@ -146,19 +206,182 @@ i {
 #middleOne {
     margin-top: 54px;
     background-color: #f1f1f1;
+    border-top: 5px solid #e9e9e9;
+}
+headerTwo_right {
+    width: 100%;
 }
 #contentTwo {
+    max-height: 440px;
+    max-width: 550px;
     text-align: center;
     margin: 0 auto;
-    max-width: 550px;
-    min-height: 440px;
     background-color: #333333;
 }
+#contentTwo img {
+    width: 100%;
+}
+#headerTwo p {
+    text-align: justify;
+    color: #666666;
+}
+#readButton {
+    background-color: #0099ff;
+    width: 126px;
+    height: 31px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+#readButton:hover {
+    color: black;
+}
+#readButton i {
+    padding-left: 7px;
+    font-size: 8px;
+}
+#picTabs {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+}
+#contentTwo ul {
+    padding: 0;
+}
+#picTabs li {
+    height: 15px;
+    width: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: black;
+}
+#picTabs li:hover {
+    background-color: transparent;
+    border: 3px solid black;
+}
+#picTabs li:active {
+    background-color: transparent;
+    border: 3px solid black;
+}
+#contLeft {
+    margin: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+#contLeft img {
+    width: 100%;
+    max-width: 470px;
+    max-height: 426px;
+}
+#contRight {
+    text-align: center;
+}
+#contRight h5 {
+    color: #0099ff;
+}
+#addSpot {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-left: 10px solid #0099ff;
+}
+#addSpotRight button {
+    font-size: 20px;
+    color: #dbcecf;
+    border: none;
+    border-radius: 7px;
+    background-color: #0099ff;
+    margin: 22px 0;
+}
+#addSpotRight button:hover {
+    color: white;
+}
+#lastWrap {
+    border-top: 5px solid black;
+    margin: 40px 0;
+    background-color: #1a1a1a;
+}
+#about i {
+    font-size: 8px;
+}
+#about p, #posts label, #posts p, #posts time {
+    color: #666666;
+}
+#posts label {
+    font-weight: 700;
+}
+#links i {
+    margin-right: 10px;
+    font-size: 8px;
+    color: #989898;
+}
+#links a:hover {
+    color: white;
+}
+#links hr {
+    height: 1px;
+    background-color: #232323;
+    border: none;
+    margin: 5px 0;
+}
+#posts i {
+    font-size: 8px;
+}
+#submitBtn {
+    margin: 0;
+    padding: 0;
+    width: 76px;
+    height: 30px;
+    background-color: #0099ff;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+}
+#textBox {
+    height: 110px;
+    resize: none;
+}
+
+
+@media only screen and (min-width: 470px) {
+    .fourBlocks {
+       width: 45%;
+       text-align: left;
+    }
+    .fixedRight {
+        float: right;
+    }
+    .midBrake {
+        float: left;
+    }
+    .midLeft {
+        float: left;
+    }
+    .midRight {
+        float: right;
+    }
+}
+
 @media only screen and (min-width: 641px) {
     /*TAGS style*/
     /*CLASS style*/
     .contentAlign {
        padding: 18px 0;
+    }
+    .smallWidthHeight {
+        max-width: 225px;
+        font-size: 14px;
+    }
+    .smallLeft {
+        float: left;
+        width: 45%;
+    }
+    .smallRight {
+        float: right;
+        width: 45%;
     }
     /*ID style*/
     #topBlock {
@@ -189,6 +412,41 @@ i {
     #contentOne form {
         float: right;
     }
+    #headerTwo p {
+        text-align: left;
+    }
+    #contLeft {
+        float: left;
+        width: 45%;
+    }
+    #contLeft img {
+    
+    }
+    #contRight {
+        float: right;
+        width: 45%;
+    }
+    #contRight img {
+        width: 100%;
+        max-height: 85px;
+        max-width: 80px;
+    }
+    #addSpotLeft {
+        float: left;
+        width: 60%;
+        padding: 0 30px;
+        text-align: left;
+    }
+    #addSpotRight {
+        float: right;
+        width: 40%;
+        padding: 0 30px;
+        text-align: center;
+    }
+    #addSpotRight button {
+        height: 58px;
+        max-width: 280px;
+    }
 }
 @media only screen and (min-width: 750px) {
     /*TAGS style*/
@@ -208,18 +466,44 @@ i {
         font-size: 10px;
     }
     #headerTwo {
+        position: relative;
+        top: 120px;
         width: 40%;
         float: left;
         text-align: left;
+        padding-right: 5%;
     }
     #headerTwo_right {
+        position: relative;
         float: right;
         width: 60%;
+        max-width: 550px;
     }
-    #contentTwo {
-        position: relative;
-        height: 440px;
-        width: 550px;
+    #picTabs {
+        position: absolute;
+        bottom: 0px;
+        left: 60px;
+    }
+}
+@media only screen and (min-width: 1020px) {
+    .fourBlocks {
+        width: 225px;
+        text-align: left;
+    }
+    .midBrake {
+        float: none;
+    }
+    .midLeft {
+        float: left;
+    }
+    .midRight {
+        float: left;
+    }
+    #about, #links {
+        margin-right: 20px;
+    }
+    #contact {
+        margin-left: 20px;
     }
 }
 

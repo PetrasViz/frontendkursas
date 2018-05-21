@@ -33,8 +33,10 @@
         </header>
     </div>
     <div class="mainBlocks">
-        <div id="firstButton" class="contentAlign">
-            <button>&mdash;</button>
+        <div id="buttonPad">
+            <div id="firstButton">
+                <button>&mdash;</button>
+            </div> 
         </div>
     </div>
     <div class="mainBlocks">
@@ -71,17 +73,18 @@
     <div id="middleOne" class="mainBlocks">
         <div class="contentAlign">
             <div id="headerTwo">
-                <h2>Your title can be long and descriptive</h2>
+                <h1>Your title can be long and descriptive</h1>
                 <p>
                     Cursuspenatisaccum ut curabitur nulla tellus tor ames a in
                     curabitur pede. Idet mollisi eros dis orci congue elis et
                     currabitur.
                 </p>
+                <a href="#"><button id="readButton">READ MORE<i class="fas fa-angle-double-right"></i></button></a>
             </div>
             <div id="headerTwo_right">
                 <div id="contentTwo">
-                    <img heigth="550" width="440" />
-                    <ul>
+                    <img src="img/bigGrayImage.jpg" width="550px" height="440px"/>
+                    <ul id="picTabs">
                         <li></li>
                         <li></li>
                         <li></li>
@@ -95,12 +98,12 @@
     </div>
     <div class="mainBlocks">
         <div class="contentAlign">
-            <div>
-                <img />
+            <div id="contLeft">
+                <img src="img/phoneTablet.jpg" height="426px" width="470px" />
             </div>
-            <div>
+            <div id="contRight">
                 <div>
-                    <div>
+                    <div class="smallLeft smallWidthHeight">
                         <img height="85px" width="80px" />
                         <h5>Vivamuslibero Augue</h5>
                         <p>
@@ -109,7 +112,7 @@
                             pellentesque.
                         </p>
                     </div>
-                    <div>
+                    <div class="smallRight smallWidthHeight">
                         <img height="85px" width="80px" />
                         <h5>Vivamuslibero Augue</h5>
                         <p>
@@ -119,8 +122,9 @@
                         </p>
                     </div>
                 </div>
+                <div class="clearBoth"></div>
                 <div>
-                    <div>
+                    <div class="smallLeft smallWidthHeight">
                         <img height="85px" width="80px" />
                         <h5>Vivamuslibero Augue</h5>
                         <p>
@@ -129,7 +133,7 @@
                             pellentesque.
                         </p>
                     </div>
-                    <div>
+                    <div class="smallRight smallWidthHeight">
                         <img height="85px" width="80px" />
                         <h5>Vivamuslibero Augue</h5>
                         <p>
@@ -140,123 +144,130 @@
                     </div>
                 </div>
             </div>
+            <div class="clearBoth"></div>
         </div>
     </div>
     <div class="mainBlocks">
-        <div class="contentAlign">
-            <div>
+        <div id="addSpot" class="contentAlign">
+            <div id="addSpotLeft">
                 <h2>Lorem ipsum dolor sit amet elit !</h2>
                 <p>
                     Why not try our services today, you won't regret your choice!
                 </p>
             </div>
-            <div>
+            <div id="addSpotRight">
                 <button href="#">CONTACT US TODAY</button>
             </div>
+            <div class="clearBoth"></div>
         </div>
     </div>
-    <div class="mainBlocks">
+    <div id="lastWrap" class="mainBlocks">
         <div class="contentAlign">
-            <div>
-                <h5>ABOUT US</h5>
-                <img height="95px" width="215px" />
-            </div>
-            <div>
-                <h5>QUICK LINKS</h5>
-                <div>
-                    <img />
-                    <a href="#">Lorem ipsum dolor sit</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Amet consectetur</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Praesent vel sem id</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Gurabitur hendrerit est</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Aliquam eget erat nec sapien</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Gras id augue nunc</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">In nec justo non</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Vivamus mollis enim ut</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Curabitur henderit est</a>
-                </div>
-                <hr />
-                <div>
-                    <img />
-                    <a href="#">Sed a nulla urna</a>
-                </div>
-            </div>
-            <div>
-                <h5>LATEST BLOG POST</h5>
-                <div>
-                    <label>Post Title</label>
-                    <details>Admin, domainname.com</details>
-                    <time>Friday, 6th April 2000</time>
+            <div class="midBrake">
+                <div id="about" class="fourBlocks midLeft">
+                    <h5>ABOUT US</h5>
+                    <img height="95px" width="215px" />
                     <p>
-                        Nulla facilsi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
-                        consequat imperdiet.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc non diam erat. In fringilla massa ut nisi ullamcorper
+                        pellentesque. Quisque non luctus sem. Nullam non magna vel
+                        nisi posuere bibendum vitae sed dui.
                     </p>
-                    <a>Read more <img /></a>
+                    <a class="fixedRight" href="#">Read More <i class="fas fa-angle-double-right"></i></a>
+                    <div class="clearBoth"></div>
                 </div>
-                <div>
-                    <label>Post Title</label>
-                    <details>Admin, domainname.com</details>
-                    <time>Friday, 6th April 2000</time>
-                    <p>
-                        Nulla facilsi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
-                        consequat imperdiet.
-                    </p>
-                    <a>Read more <img /></a>
+                <div id="links" class="fourBlocks midRight">
+                    <h5>QUICK LINKS</h5>
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Lorem ipsum dolor sit</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Amet consectetur</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Praesent vel sem id</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Gurabitur hendrerit est</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Aliquam eget erat nec sapien</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Gras id augue nunc</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">In nec justo non</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Vivamus mollis enim ut</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Curabitur henderit est</a>
+                    </div>
+                    <hr />
+                    <div>
+                        <i class="fas fa-angle-double-right"></i><a href="#">Sed a nulla urna</a>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h5>CONTACT US</h5>
-                <form>
-                    <input type="text" name="name" placeholder="Name" />
-                    <input type="email" name="emailaddress" placeholder="Email" />
-                    <input type="text" name="subject" placeholder="Subject" />
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <input type="submit" name="submitButton" value="SUMBIT" />
-                </form>
+            <div id="posts" class="midBrake highMark">
+                <div class="fourBlocks midLeft">
+                    <h5>LATEST BLOG POST</h5>
+                    <div>
+                        <label>Post Title</label>
+                        <p class="noMarg">Admin, <a href="#">domainname.com</a></p>
+                        <time class="noMarg">Friday, 6th April 2000</time>
+                        <p class="bigerPar">
+                            Nulla facilsi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
+                            consequat imperdiet.
+                        </p>
+                        <a class="fixedRight" href="#">Read more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="clearBoth"></div>
+                    <div>
+                        <label>Post Title</label>
+                        <p class="noMarg">Admin, <a href="#">domainname.com</a></p>
+                        <time class="noMarg">Friday, 6th April 2000</time>
+                        <p class="bigerPar">
+                            Nulla facilsi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus
+                            consequat imperdiet.
+                        </p>
+                        <a class="fixedRight" href="#">Read more <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="clearBoth"></div>
+                </div>
+                <div id="contact" class="fourBlocks midRight">
+                    <h5>CONTACT US</h5>
+                    <form action="/action.php" method="get">
+                        <input class="inPut" type="text" name="name" placeholder="Name" />
+                        <input class="inPut" type="email" name="emailaddress" placeholder="Email" />
+                        <input class="inPut" type="text" name="subject" placeholder="Subject" />
+                        <textarea id="textBox" class="inPut" name="message" placeholder="Message"></textarea>
+                        <input id="submitBtn" type="submit" name="submitButton" value="SUMBIT" />
+                    </form>
+                </div>
+                <div class="clearBoth"></div>
             </div>
         </div>
-    </div>
-    <div class="mainBlocks">
-        <footer class="contentAlign">
-            <p>
-                Copyright &copy; 2013 Domain Name - All Rights reserved
-            </p>
-            <p>
-                Template by OS Templates
-            </p>
-        </footer>
+        <div id="footerBox" class="mainBlocks">
+            <footer class="contentAlign">
+                <p>
+                    Copyright &copy; 2013 Domain Name - All Rights reserved
+                </p>
+                <p>
+                    Template by OS Templates
+                </p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
