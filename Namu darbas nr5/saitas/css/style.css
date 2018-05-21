@@ -22,6 +22,7 @@ h2 {
 .mainBlocks {
     padding: 0 20px;
     margin: 0;
+    width: 100%;
 }
 .contentAlign {
     position: relative;
@@ -99,7 +100,7 @@ h2 {
     text-decoration: none;
 }
 #options a li:hover {
-    color: blue;
+    color: white;
 }
 #socialLinks {
     position: relative;
@@ -121,7 +122,7 @@ h2 {
     border-radius: 16px;
 }
 #socialLinks a i:hover {
-    color: blue;
+    color: #2e2e2e;
 }
 #buttonPad {
     position: relative;
@@ -153,7 +154,7 @@ h2 {
     outline: none;
 }
 #firstButton button:hover {
-    color: blue;
+    color: #0099ff;
     top: 0px;
 }
 #navBar {
@@ -300,7 +301,7 @@ headerTwo_right {
 }
 #lastWrap {
     border-top: 5px solid black;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
     background-color: #1a1a1a;
 }
 #about i {
@@ -344,8 +345,17 @@ headerTwo_right {
     height: 110px;
     resize: none;
 }
-
-
+#footerBox {
+    background-color: #222222;
+    color: #666666;
+    min-height: 60px;
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #2d2d2d;
+}
+#footerBox p {
+    margin: 0 auto;
+}
 @media only screen and (min-width: 470px) {
     .fourBlocks {
        width: 45%;
@@ -419,9 +429,6 @@ headerTwo_right {
         float: left;
         width: 45%;
     }
-    #contLeft img {
-    
-    }
     #contRight {
         float: right;
         width: 45%;
@@ -446,6 +453,15 @@ headerTwo_right {
     #addSpotRight button {
         height: 58px;
         max-width: 280px;
+    }
+    #footerLeft {
+        float: left;
+    }
+    #footerRight {
+        float: right;
+    }
+    #footerBox {
+        max-height: 60px;
     }
 }
 @media only screen and (min-width: 750px) {
