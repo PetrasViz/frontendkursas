@@ -1,0 +1,9 @@
+﻿/*WIDTH FOR CENTER CONTAINERS*/
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+.footer {
+    margin: 0;
+    min-height: 60px;
+}
