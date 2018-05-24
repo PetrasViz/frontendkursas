@@ -2,6 +2,8 @@
 .container {
     width: 100%;
     max-width: 960px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .footer {
     margin: 0;
@@ -9,4 +11,13 @@
 }
 #bigImage img {
     width: 100%;
+}
+#rightHead {
+    background-color: rgba(0, 0, 0, 0.59);
+}
+footer {
+    height: 60px;
+}
+footer p {
+    display: inline-block;
 }
