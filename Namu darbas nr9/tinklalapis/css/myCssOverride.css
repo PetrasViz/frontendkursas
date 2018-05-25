@@ -6,7 +6,6 @@
     padding-right: 0;
 }
 .footer {
-    margin: 0;
     min-height: 60px;
 }
 #bigImage img {
@@ -16,8 +15,11 @@
     background-color: rgba(0, 0, 0, 0.59);
 }
 footer {
-    height: 60px;
+    
 }
-footer p {
-    display: inline-block;
+.dottedBorder {
+    border-bottom: 1px dotted;
+}
+.autoWidth {
+    max-width: 290px;
 }
