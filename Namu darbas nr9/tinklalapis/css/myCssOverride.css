@@ -11,8 +11,8 @@
 #rightHead {
     background-color: rgba(0, 0, 0, 0.59);
 }
-footer {
-    
+.chevron {
+    font-size: 12px;
 }
 .dottedBorder {
     border-bottom: 1px dotted;
