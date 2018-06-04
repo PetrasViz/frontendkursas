@@ -3,267 +3,345 @@
 }
 
 html {
-    overflow-x: hidden;
-    overflow-y: auto;
-    min-width: 30%;
+    height: 100%;
 }
 
-body {
+.bodyBOX {
     width: 100%;
     height: 100%;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    background-color: #ffdddd !important;
+    filter: grayscale(0.5);
 }
-/*Floating navigation bar style*/
-#navList {
-    position: fixed;
-    bottom: 0px;
-    margin: 0px;
-    padding: 0px;
-    height: 55px;
+
+#blackPopupWindow {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.80);
-    z-index: 999;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 995;
+    visibility: hidden;
 }
 
-    #navList:hover {
-        background-color: white;
-        color: black;
-    }
+#canYouComeBOX {
+    margin: 5% auto;
+    height: auto;
+    width: auto;
+    max-width: 640px;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 1;
+    background-color: white;
+    text-align: center;
+}
 
-nav {
-    display: block;
-    margin: 8px auto 0px auto;
-    width: 550px;
-    overflow: visible;
-    color: rgba(0, 0, 0, 0.70);
+.canYouCome_wrapper {
+    width: auto;
+    margin: 0 7%;
+    padding-bottom: 30px;
+}
+
+.canYouCome_wrapper_going {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 8px 16px;
+    margin: 0;
+    background-color: #3ce402;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    line-height: 2;
     font-size: 15px;
 }
 
-    nav div {
-        margin: 0px;
-        float: left;
+    .canYouCome_wrapper_going:hover, .canYouCome_wrapper_cant:hover {
+        background-color: #ccc;
+        color: black;
     }
 
-.greyedOut {
-    padding-top: 10px;
-    height: 30px;
-    width: 130px;
+.canYouCome_wrapper_cant {
+    width: 50%;
+    float: right;
     text-align: center;
+    padding: 8px 16px;
+    margin: 0;
+    background-color: #f44336;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    line-height: 2;
+    font-size: 15px;
 }
 
-    .greyedOut:hover {
-        background-color: #c3c3c3;
-    }
-
-.blacketOut {
-    padding-top: 10px;
-    height: 30px;
-    width: 130px;
-    text-align: center;
+.canYouCome_wrapper input {
+    width: 100%;
+    height: 35px;
 }
 
-    .blacketOut:hover {
-        background-color: black;
-        color: white;
-    }
-/*Main body syle start*/
-#headFOTO {
-    position: relative;
+#canYouComeBOX h1 {
+    letter-spacing: 4px;
+    font-weight: 400;
+    padding-top: 30px;
     margin: 0px;
-    padding: 0px;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.hopeYoucanSecond {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.signature {
+    font-style: italic;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.headerBOX {
+    position: relative;
+    display: block;
     width: 100%;
     height: 667px;
-    background: #000000 url('img/wedding_couple.jpg') top center no-repeat;
+    margin: 0px;
+    padding: 0px;
+    background: #000000 url('../img/wedding_couple.jpg') top center no-repeat;
     /*background-attachment: fixed; idomus efektas gaunasi lyg stovetu vietoje*/
     background-size: cover;
     filter: grayscale(0.5);
 }
 
-.mainHeader {
+.headerBOX_center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    padding: 0px;
+    transform: translate(-50%,-50%);
+    text-align: center;
     color: white;
 }
 
-    .mainHeader h1 {
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 96px;
-        margin: 10px 0px 10px 0px;
-    }
+.headerBOX h1 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+    margin: 10px 0px 10px 0px;
+}
 
-    .mainHeader h2 {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 45px;
-        margin: 10px 0px 10px 0px;
-    }
+.headerBOX h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 10px 0px 10px 0px;
+}
 
-    .mainHeader h3 {
-        font-size: 30px;
-        font-weight: 700;
-        line-height: 45px;
-        margin: 0px;
-    }
+.headerBOX h3 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0px;
+}
 
-    .mainHeader h1, h2, h3 {
-        letter-spacing: 4px;
-        text-align: center;
-        z-index: 4;
-    }
-
-#mainBody {
+.contentBOX {
     position: relative;
+    display: block;
     width: 100%;
-    display: inline-block;
-    overflow: hidden;
     background-color: #ffdddd !important;
     filter: grayscale(0.5);
+    margin: 0px;
 }
 
-.mainBody_content {
-    /* position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -52%);*/
-    display: inline-block;
-    position: relative;
-    padding: 64px 16px;
-    margin: 0px auto;
-    border: none;
-    width: auto;
+.contentBOX_wrapp {
+    position: static;
+    display: block;
     max-width: 980px;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+    margin-bottom: 20px;
 }
 
-    .mainBody_content h1 {
-        text-align: center;
-        color: #757575;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 1.5;
-        margin: 10px 0px;
-    }
+.contentBOX h1 {
+    text-align: center;
+    color: #757575;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.5;
+    margin: 0px 0px 50px 0px;
+}
 
-    .mainBody_content img {
-        width: 100%;
-        height: auto;
-        filter: grayscale(0.5);
-        border: none;
-        border-radius: 4px;
-        margin: 32px 0px;
-    }
+.contentBOX img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(0.5);
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+}
 
-    .mainBody_content p {
-        line-height: 2;
-        color: black;
-        font-style: italic;
-        font-size: 15px;
-    }
+.contentBOX p {
+    line-height: 2;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+    text-align: left;
+}
 
-.weddingDetails_button {
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.contentBOX button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 30px;
     padding: 12px 24px;
     font-size: 18px;
     text-align: center;
-    text-decoration: none;
+    line-height: 2;
     vertical-align: middle;
     background-color: black;
     color: white;
+    outline: none;
 }
 
-    .weddingDetails_button:hover {
-        color: black;
-        background-color: #ccc;
+.contentBOX a {
+    text-decoration: none;
+}
+
+    .contentBOX a:hover {
+        text-decoration: none;
     }
 
-#flowersBackground {
-    display: inline-block;
-    overflow: hidden;
+.contentBOX button:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+.flowerBOX {
+    display: block;
     position: relative;
     width: 100%;
-    height: 617px;
-    background: black url('img/flowers.jpg') top left no-repeat;
-    background-position: center;
+    height: 668px;
+    background: black url('../img/flowers.jpg') top center no-repeat;
     background-size: cover;
     padding: 0px;
     margin: 0px;
 }
 
-.centeredContainers {
+.flowerBOX_wrapp {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    text-align: center;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
 }
 
-#flowersBackground h3, h2 {
+.flowerBOX h3, h2 {
     margin: 0px;
     font-weight: 400;
-    line-height;
-    1.5;
+    line-height: 1.5;
+    text-align: center;
+    color: white;
 }
 
-#flowersBackground h3 {
+.flowerBOX h3 {
     font-size: 64px;
     margin: 10px 0;
 }
 
-#flowersBackground h2 {
+.flowerBOX h2 {
     font-size: 30px;
     margin: 10px 0px;
 }
 
-#weddingPlace {
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
+.weddingBOX {
+    display: block;
+    position: static;
     width: 100%;
     background-color: #ffdddd !important;
     filter: grayscale(0.5);
+    margin: 0px;
+    padding: 0px;
 }
 
-    #weddingPlace h1 {
-        color: #757575 !important;
-        font-weight: bold;
-        font-size: 36px;
-        line-height;
-        1.5;
-    }
+.weddingBOX_wrap {
+    position: static;
+    margin: 0px auto;
+    display: block;
+    max-width: 980px;
+    text-align: center;
+    padding: 64px 16px;
+}
 
-    #weddingPlace img {
-        width: 100%;
-        height: auto;
-        filter: grayscale(0.5);
-        border: none;
-        border-radius: 8px;
-        margin: 64px 0px;
-    }
-
-#invitationFooter {
-    position: relative;
+.weddingBOX img {
     width: 100%;
-    height: 1000px background-color: #ffdddd !important;
+    height: auto;
+    filter: grayscale(0.5);
+    border: none;
+    border-radius: 8px;
+    margin: 64px 0px;
 }
 
-.perfectCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+.weddingBOX h3 {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+    color: black;
+    line-height: 1.5;
+}
+
+.weddingBOX h1 {
+    color: #757575;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.weddingBOX p {
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 15px;
+    color: black;
+    line-height: 2;
+}
+
+.weddingBOX_float {
+    position: static;
+    margin: 0px auto;
+}
+
+.weddingBOX_float_when {
+    float: left;
+    width: 50%;
+}
+
+.weddingBOX_float_where {
+    float: right;
+    width: 50%;
+}
+
+.inviteBOX {
+    display: block;
+    position: static;
+    width: 100%;
+    background-color: #ffdddd !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.inviteBOX_wrapp {
+    display: block;
+    position: : static;
+    width: auto;
+    text-align: center;
+    margin: 0px auto;
+    padding: 30px 0px 70px 0px;
 }
 
 .hopeYoucan {
@@ -285,11 +363,8 @@ nav {
 }
 
 .responseButton {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    background-color: #f44336;
+    background-color: #f44336 !important;
+    ;
     opacity: 0.6;
     color: white;
     font-size: 24px;
@@ -302,23 +377,32 @@ nav {
     border-radius: 4px;
     cursor: pointer;
 }
-/*Black footer syle start*/
-#footer {
-    position: relative;
+
+    .responseButton:hover {
+        background-color: darkgrey;
+        opacity: 1;
+        color: white;
+    }
+
+.footer {
+    position: static;
     background: black;
     color: white;
     height: 90px;
+    width: 100%;
     padding: 0px;
     margin: 0px;
     z-index: 1;
     font-size: 15px;
 }
 
-    #footer footer {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate( -50%, -50%);
+    .footer footer {
+        display: block;
+        position: static;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
     }
 
 footer a {
@@ -330,8 +414,60 @@ footer a {
     footer a:hover {
         color: green;
     }
-/*White background for navigation bar when at the bottom of the page*/
-#whiteBottom {
+
+.navList {
+    position: fixed;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: 55px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.80);
+    z-index: 900;
+}
+
+    .navList:hover {
+        background-color: white;
+        color: black;
+    }
+
+nav {
+    display: block;
+    margin: auto;
+    padding-top: 6px;
+    width: 95%;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 15px;
+}
+
+    nav div {
+        margin: 0px;
+        width: 25%;
+        float: left;
+    }
+
+.greyedOut {
+    padding-top: 14px;
+    height: 30px;
+    text-align: center;
+}
+
+    .greyedOut:hover {
+        background-color: #c3c3c3;
+    }
+
+.blacketOut {
+    padding-top: 14px;
+    height: 30px;
+    text-align: center;
+}
+
+    .blacketOut:hover {
+        background-color: black;
+        color: white;
+    }
+
+.whiteBottom {
     background-color: white;
     height: 55px;
     width: 100%;
@@ -340,11 +476,40 @@ footer a {
 }
 /*Media type: viewport less than 600px in width*/
 @media screen and (max-width: 600px) {
-    #navList {
+    .navList {
         display: none;
     }
 
-    #whiteBottom {
+    .whiteBottom {
         display: none;
     }
-}
+
+    .weddingBOX_float {
+        width: 220px;
+        margin: 0px auto;
+    }
+
+    .weddingBOX_float_when {
+        float: none;
+        width: auto;
+    }
+
+    .weddingBOX_float_where {
+        float: none;
+        width: auto;
+        padding-top: 10px;
+    }
+
+    .canYouCome_wrapper {
+        width: 80%;
+    }
+
+    .canYouCome_wrapper_going {
+        float: none;
+        width: 100%;
+    }
+
+    .canYouCome_wrapper_cant {
+        float: none;
+        width: 100%;
+    }
