@@ -146,17 +146,17 @@ footer ul, li {
 #readMore_small i {
     font-size: 13px;
 }
-#subscribe i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#paperPlane_wrap {
     background-color: #1ccdca;
     border: none;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    height: 100%;
-    width: 100%;
+}
+#paperPlane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #subscribe_input input {
         border-bottom-left-radius: 4px;
@@ -172,5 +172,23 @@ footer ul, li {
 }
 #subscribe:hover {
     border-color: #1ccdca;
+}
+#social_links {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    color: dimgray;
+}
+#social_links i {
+    margin-left: 8px;
+    font-size: 12px;
+}
+#artist_name {
+    position: absolute;
+    left: 50%;
+    color: dimgrey;
+    top: 10%;
+    padding-left: 6px;
 }
 
