@@ -146,3 +146,31 @@ footer ul, li {
 #readMore_small i {
     font-size: 13px;
 }
+#subscribe i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1ccdca;
+    border: none;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 100%;
+    width: 100%;
+}
+#subscribe_input input {
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+        border: none;
+        text-indent: 15px;
+        height: 37px;
+}
+#subscribe {
+    border: 1px solid transparent;
+    padding: 0;
+    border-radius: 4px;
+}
+#subscribe:hover {
+    border-color: #1ccdca;
+}
+
