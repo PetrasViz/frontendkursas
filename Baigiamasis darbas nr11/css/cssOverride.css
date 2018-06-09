@@ -7,3 +7,122 @@
         left: 100%;
         margin-top: -1px;
     }
+.glyph-size {
+    font-size: 16px;
+}
+.glyph-size-two {
+    font-size: 34px;
+    color: #1ccdca;
+    margin-top: 28px;
+}
+#bckLeaf {
+    background: black url('../images/bg_header4.jpg') no-repeat right;
+}
+.movingRowsWrapper {
+    width: 100%;
+}
+.movingRowsBackground {
+    color: white;
+    height: 35px;
+    background-color: #3c464d;
+    margin-bottom: 25px;
+}
+#jump-up-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 43px;
+    width: 43px;
+    background-color: #1ccdca;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 22px;
+    z-index: 100;
+    transition: opacity linear 200ms;
+}
+#jump-up-button:hover {
+    opacity: 0.8;
+}
+#jump-up-button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+}
+#footerMainWrapper {
+    position: relative;
+    background-color: #131619;
+    border-top: 1px dashed #323538;
+    font-size: small;
+    color: #989898;
+}
+#footerSecondWrapper {
+    padding: 32px 0;
+}
+.list-inline-item a {
+    margin: 0 auto;
+    color: #989898;
+}
+.list-inline-item a:hover {
+    color: #989898;
+}
+footer ul, li {
+    margin: 0 auto;
+}
+#bestTheme hr {
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    border-bottom: 1px dashed #989898;
+}
+.cloudTags {
+    color: #989898;
+    background-color: #0c0f10;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color linear 200ms, color linear 200ms;
+}
+.cloudTags:hover {
+    border-color: #1ccdca;
+    color: white;
+    cursor: pointer;
+}
+#bottomINFO {
+    background-color: #191e21;
+    color: white;
+}
+#bottomINFO p,a {
+    font-size: 12px;
+}
+#bottomINFO a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 14px;
+}
+#bottomINFO hr {
+    background-color: grey;
+    margin: 45px 0;
+}
+.commentsPosts {
+    font-size: 12px;
+    color: #989898;
+}
+#morePostButton i {
+    font-size: 11px;
+}
+#lightBckg {
+    position: relative;
+    background-color: #ecf0f1;
+    width: 100%;
+}
+#authorID_wrap {
+    position: relative;
+}
+#authorID_wrap img {
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    z-index: 200;
+}
