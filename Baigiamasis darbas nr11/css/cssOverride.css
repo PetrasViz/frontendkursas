@@ -191,4 +191,12 @@ footer ul, li {
     top: 10%;
     padding-left: 6px;
 }
+#locationWrap {
+    background-color: #684962;
+    color: white;
+}
+#dashedLine {
+    background-color: #191e21;
+    border-bottom: 1px dashed #989898;
+}
 

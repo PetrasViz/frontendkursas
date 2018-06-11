@@ -290,12 +290,27 @@
         </div>
     </div>
     <!--OUR SKILLS END-->
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <!-- CONTACT START-->
+    <div class="container-fluid">
+        <div class="container">
+            <h5>CONTACT US</h5>
+            
+            <form>
 
-
-
-
+            </form>
+        </div>
+    </div>
+    <!-- CONTACT END-->
+    <!-- LOCATION START-->
+    <div id="locationWrap" class="container-fluid px-0">
+        <div class="container text-center">
+            <h4 class="py-4">OUR LOCATION</h4>
+        </div>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+    </div>
+    <!-- LOCATION END-->
     <!--BOTTOM INFO START-->
+    <hr id="dashedLine" class="my-0 pb-1" />
     <div id="bottomINFO" class="container-fluid py-5">
         <div class="container">
             <div class="row">
@@ -475,23 +490,9 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- AJAX library from google-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <script>
-        function myMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(51.508742, -0.120850),
-                zoom: 14,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            var uluru = { lat: 51.507995, lng: -0.102126 };
-            var marker = new google.maps.Marker({ position: uluru, map: map });
-            var uluru2 = { lat: 51.510787, lng: -0.117643 };
-            var marker2 = new google.maps.Marker({ position: uluru2, map: map });
-            var uluru3 = { lat: 51.512981, lng: -0.100362 };
-            var marker3 = new google.maps.Marker({ position: uluru3, map: map });
-            }
-    </script>
-
+    <!-- Google maps script-->
+    <script src="js/maps.js"></script>
+    <!-- Google maps API-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAleRzJmcSo9TRYJ2U2CbFGmffKT8wjeew&callback=myMap"></script>
 
 </body>
